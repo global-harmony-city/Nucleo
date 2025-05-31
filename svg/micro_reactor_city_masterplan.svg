@@ -607,7 +607,7 @@
     
     <!-- 研究開発施設 -->
     <rect x="380" y="180" width="50" height="40" fill="#6495ED"/>
-    <text x="405" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2F4F4F">R&D施設</text>
+    <text x="405" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2F4F4F">R＆D施設</text>
     
     <text x="325" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">IT・研究区域</text>
   </g>
