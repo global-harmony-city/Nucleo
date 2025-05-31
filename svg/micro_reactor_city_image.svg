@@ -1,0 +1,217 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景グラデーション（空） -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#98FB98;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#90EE90;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#708090;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="reactorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#4169E1;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4169E1;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 空の背景 -->
+  <rect width="1200" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- 地面 -->
+  <rect x="0" y="400" width="1200" height="400" fill="url(#groundGradient)"/>
+  
+  <!-- 遠景の山々 -->
+  <polygon points="0,350 200,250 400,300 600,200 800,280 1000,220 1200,260 1200,400 0,400" fill="url(#mountainGradient)" opacity="0.7"/>
+  
+  <!-- 川 -->
+  <path d="M 1200,500 Q 1000,480 800,520 Q 600,560 400,540 Q 200,520 0,560 L 0,580 Q 200,540 400,560 Q 600,580 800,540 Q 1000,500 1200,520 Z" fill="#4169E1" opacity="0.8"/>
+  
+  <!-- タイトルエリア -->
+  <rect x="50" y="50" width="500" height="120" fill="rgba(255,255,255,0.9)" stroke="#4169E1" stroke-width="2" rx="10"/>
+  <text x="300" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2F4F4F">マイクロ炉自給自足型</text>
+  <text x="300" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#4169E1">モデル都市</text>
+  <text x="300" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2F4F4F">25年サイクル永続型・Well-Being重視</text>
+  
+  <!-- 中央のマイクロ炉（地下設置、地上に管理施設） -->
+  <circle cx="600" cy="500" r="40" fill="url(#reactorGlow)"/>
+  <rect x="570" y="470" width="60" height="30" fill="#2F4F4F" rx="5"/>
+  <rect x="580" y="480" width="40" height="20" fill="#4169E1" rx="3"/>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">マイクロ炉</text>
+  <text x="600" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">地下15m設置</text>
+  
+  <!-- エネルギー配電線（光る線） -->
+  <line x1="600" y1="500" x2="200" y2="450" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+  <line x1="600" y1="500" x2="400" y2="420" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+  <line x1="600" y1="500" x2="800" y2="430" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+  <line x1="600" y1="500" x2="1000" y2="460" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+  
+  <!-- 住宅エリア（左側） -->
+  <g id="residential">
+    <!-- 戸建て住宅 -->
+    <rect x="150" y="430" width="30" height="25" fill="#DEB887" rx="2"/>
+    <polygon points="150,430 165,415 180,430" fill="#8B4513"/>
+    <rect x="160" y="440" width="8" height="10" fill="#4169E1"/>
+    <rect x="152" y="435" width="6" height="6" fill="#FFD700"/>
+    <text x="165" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">太陽光</text>
+    
+    <rect x="200" y="430" width="30" height="25" fill="#DEB887" rx="2"/>
+    <polygon points="200,430 215,415 230,430" fill="#8B4513"/>
+    <rect x="210" y="440" width="8" height="10" fill="#4169E1"/>
+    <rect x="202" y="435" width="6" height="6" fill="#FFD700"/>
+    
+    <rect x="250" y="430" width="30" height="25" fill="#DEB887" rx="2"/>
+    <polygon points="250,430 265,415 280,430" fill="#8B4513"/>
+    <rect x="260" y="440" width="8" height="10" fill="#4169E1"/>
+    <rect x="252" y="435" width="6" height="6" fill="#FFD700"/>
+    
+    <text x="215" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">住宅エリア</text>
+    <text x="215" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">350世帯・1000人</text>
+  </g>
+  
+  <!-- 農業エリア（右上） -->
+  <g id="agriculture">
+    <!-- 水田 -->
+    <rect x="850" y="380" width="80" height="40" fill="#228B22" opacity="0.8"/>
+    <rect x="850" y="380" width="80" height="40" fill="#4169E1" opacity="0.3"/>
+    <text x="890" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">水田 100ha</text>
+    
+    <!-- 温室 -->
+    <rect x="950" y="390" width="40" height="20" fill="#98FB98" stroke="#2F4F4F" stroke-width="1"/>
+    <polygon points="950,390 970,380 990,390" fill="rgba(255,255,255,0.5)"/>
+    <text x="970" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">温室</text>
+    
+    <!-- 養鶏場 -->
+    <rect x="1000" y="400" width="30" height="15" fill="#DEB887"/>
+    <circle cx="1008" cy="407" r="2" fill="white"/>
+    <circle cx="1015" cy="405" r="2" fill="white"/>
+    <circle cx="1022" cy="407" r="2" fill="white"/>
+    <text x="1015" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">養鶏 10万羽</text>
+    
+    <text x="920" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">農業エリア 200ha</text>
+    <text x="920" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">米・野菜・卵 完全自給</text>
+  </g>
+  
+  <!-- IT・研究エリア（左上） -->
+  <g id="it-research">
+    <rect x="350" y="400" width="50" height="30" fill="#4682B4" rx="3"/>
+    <rect x="360" y="410" width="30" height="15" fill="#00FFFF" opacity="0.7"/>
+    <circle cx="365" cy="415" r="2" fill="#FFD700"/>
+    <circle cx="375" cy="417" r="2" fill="#FFD700"/>
+    <circle cx="385" cy="415" r="2" fill="#FFD700"/>
+    <circle cx="395" cy="417" r="2" fill="#FFD700"/>
+    <text x="375" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2F4F4F">AIデータセンター</text>
+    <text x="375" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">スマートシティ管理</text>
+  </g>
+  
+  <!-- 製造・加工エリア -->
+  <g id="manufacturing">
+    <rect x="750" y="480" width="40" height="25" fill="#696969"/>
+    <rect x="760" y="485" width="20" height="8" fill="#FF6347"/>
+    <circle cx="765" cy="478" r="3" fill="#D3D3D3"/>
+    <circle cx="775" cy="478" r="3" fill="#D3D3D3"/>
+    <circle cx="785" cy="478" r="3" fill="#D3D3D3"/>
+    <text x="770" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">食品加工</text>
+    <text x="770" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">3Dプリンティング</text>
+  </g>
+  
+  <!-- 公共施設エリア -->
+  <g id="public">
+    <rect x="500" y="420" width="35" height="25" fill="#CD853F"/>
+    <rect x="505" y="430" width="8" height="12" fill="#4169E1"/>
+    <rect x="520" y="430" width="8" height="12" fill="#4169E1"/>
+    <polygon points="500,420 517,408 535,420" fill="#8B4513"/>
+    <text x="517" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">市役所・学校</text>
+    <text x="517" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">病院・消防</text>
+  </g>
+  
+  <!-- スマート街灯 -->
+  <g id="smart-lights">
+    <line x1="300" y1="460" x2="300" y2="440" stroke="#2F4F4F" stroke-width="2"/>
+    <circle cx="300" cy="438" r="4" fill="#FFD700"/>
+    <rect x="298" y="434" width="4" height="3" fill="#4169E1"/>
+    
+    <line x1="500" y1="460" x2="500" y2="440" stroke="#2F4F4F" stroke-width="2"/>
+    <circle cx="500" cy="438" r="4" fill="#FFD700"/>
+    <rect x="498" y="434" width="4" height="3" fill="#4169E1"/>
+    
+    <line x1="700" y1="460" x2="700" y2="440" stroke="#2F4F4F" stroke-width="2"/>
+    <circle cx="700" cy="438" r="4" fill="#FFD700"/>
+    <rect x="698" y="434" width="4" height="3" fill="#4169E1"/>
+    
+    <text x="500" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">AIカメラ・音声認識搭載</text>
+  </g>
+  
+  <!-- 電気バス -->
+  <rect x="420" y="470" width="35" height="15" fill="#32CD32" rx="3"/>
+  <circle cx="430" cy="490" r="4" fill="#2F4F4F"/>
+  <circle cx="450" cy="490" r="4" fill="#2F4F4F"/>
+  <rect x="425" y="475" width="8" height="6" fill="#87CEEB"/>
+  <rect x="435" y="475" width="8" height="6" fill="#87CEEB"/>
+  <rect x="445" y="475" width="8" height="6" fill="#87CEEB"/>
+  <text x="437" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">自動運転バス</text>
+  
+  <!-- 鉄道アクセス -->
+  <rect x="50" y="520" width="200" height="8" fill="#2F4F4F"/>
+  <rect x="60" y="515" width="20" height="18" fill="#FF6347"/>
+  <rect x="85" y="525" width="4" height="4" fill="#FFD700"/>
+  <rect x="95" y="525" width="4" height="4" fill="#FFD700"/>
+  <rect x="105" y="525" width="4" height="4" fill="#FFD700"/>
+  <text x="140" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">最寄り駅15分</text>
+  
+  <!-- 特徴・メリット表示 -->
+  <g id="benefits">
+    <rect x="700" y="50" width="450" height="200" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10"/>
+    <text x="925" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#4169E1">プロジェクトの特徴</text>
+    
+    <circle cx="720" cy="105" r="5" fill="#32CD32"/>
+    <text x="735" y="110" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">✓ 25年間燃料交換不要の安全なマイクロ炉</text>
+    
+    <circle cx="720" cy="125" r="5" fill="#32CD32"/>
+    <text x="735" y="130" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">✓ 食料・エネルギー完全自給自足</text>
+    
+    <circle cx="720" cy="145" r="5" fill="#32CD32"/>
+    <text x="735" y="150" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">✓ AI・IoT統合スマートシティ</text>
+    
+    <circle cx="720" cy="165" r="5" fill="#32CD32"/>
+    <text x="735" y="170" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">✓ Well-Being重視の住環境</text>
+    
+    <circle cx="720" cy="185" r="5" fill="#32CD32"/>
+    <text x="735" y="190" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">✓ 年間3億円利益・住民配当あり</text>
+    
+    <circle cx="720" cy="205" r="5" fill="#32CD32"/>
+    <text x="735" y="210" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">✓ 全国展開可能なモデルケース</text>
+    
+    <text x="925" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF6347">投資総額 350億円 / 2040年運用開始</text>
+  </g>
+  
+  <!-- 環境・サステナビリティマーク -->
+  <g id="sustainability">
+    <circle cx="100" cy="300" r="25" fill="#32CD32" opacity="0.8"/>
+    <text x="100" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">CO2</text>
+    <text x="100" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">ZERO</text>
+    <text x="100" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">カーボン</text>
+    <text x="100" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">ニュートラル</text>
+  </g>
+  
+  <!-- 雲 -->
+  <ellipse cx="150" cy="120" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="170" cy="115" rx="25" ry="12" fill="white" opacity="0.8"/>
+  <ellipse cx="190" cy="120" rx="20" ry="10" fill="white" opacity="0.8"/>
+  
+  <ellipse cx="900" cy="100" rx="35" ry="18" fill="white" opacity="0.8"/>
+  <ellipse cx="925" cy="95" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="950" cy="100" rx="25" ry="12" fill="white" opacity="0.8"/>
+  
+  <!-- 太陽 -->
+  <circle cx="1050" cy="80" r="20" fill="#FFD700"/>
+  <line x1="1020" y1="50" x2="1030" y2="60" stroke="#FFD700" stroke-width="2"/>
+  <line x1="1070" y1="60" x2="1080" y2="50" stroke="#FFD700" stroke-width="2"/>
+  <line x1="1080" y1="110" x2="1070" y2="100" stroke="#FFD700" stroke-width="2"/>
+  <line x1="1030" y1="100" x2="1020" y2="110" stroke="#FFD700" stroke-width="2"/>
+</svg>
