@@ -179,7 +179,7 @@
 ## 7. 社会システム・ガバナンス
 
 [市政を支えるトップ9人](./doc/nine_leaders_ai_profiles.md)  
-[市政を実行するトップ15人](./doc/fifth_leaders_ai_profiles.md)
+[市政を実行するトップ15人](./doc/fifth_subleaders_ai_profiles.md)
 
 ### 7.1 行政組織
 ```
