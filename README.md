@@ -29,4 +29,7 @@
 ![Start](./画像/start_picture.webp)  
 ![End](./画像/end_picture.webp)  
 
-[今後のシナリオ](./micro_reactor_city_design.md)
+[今後の街を発展させるシナリオ](./micro_reactor_city_design.md)  
+[街を発展させるイメージゲーム](./game.md)
+
+
