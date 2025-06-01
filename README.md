@@ -29,4 +29,4 @@
 ![Start](./画像/start_picture.webp)  
 ![End](./画像/end_picture.webp)  
 
-[シナリオ](./index.md)
+[今後のシナリオ](./micro_reactor_city_design.md)
