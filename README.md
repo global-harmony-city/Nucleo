@@ -24,3 +24,9 @@
 > Nucleoは単なる都市ではありません。**人類が「共に生きる」未来の姿を示す、生きたプロトタイプ**です。
 
 ---
+
+![MAP](./画像/map.png)  
+![Start](./画像/start_picture.webp)  
+![End](./画像/end_picture.webp)  
+
+[シナリオ](./index.md)
