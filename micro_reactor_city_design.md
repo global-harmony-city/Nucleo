@@ -131,12 +131,15 @@
 
 ![ロゴ](./svg/it_infrastructure_diagram.svg)
 
+[市都市を支えるインフラ](./doc/smart_city_it_infrastructure.md)  
+
 - **5G/6Gネットワーク**: 全域カバー
 - **光ファイバー**: 各建物直結
 - **IoTセンサー**: 環境・設備・交通監視
 - **AI管理システム**: エネルギー・交通・防犯統合管理
 
-[市都市を支えるインフラ](./doc/smart_city_it_infrastructure.md)  
+
+
 
 ### 5.3 交通システム
 ```
