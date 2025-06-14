@@ -135,7 +135,7 @@
 - **光ファイバー**: 各建物直結
 - **IoTセンサー**: 環境・設備・交通監視
 - **AI管理システム**: エネルギー・交通・防犯統合管理
-[市都市を支えるインフラ](./doc/nine_leaders_ai_profiles.md)  
+[市都市を支えるインフラ](./doc/smart_city_it_infrastructure.md)  
 
 
 
