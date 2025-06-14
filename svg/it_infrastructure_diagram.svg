@@ -1,0 +1,448 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- グラデーション定義 -->
+    <linearGradient id="layerGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFE4E1;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#FFA07A;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="layerGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E0F6FF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#87CEEB;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="layerGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0FFF0;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#98FB98;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="layerGradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#F0E68C;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="layerGradient5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5F0FF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#DDA0DD;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="coreGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <radialGradient id="connectionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4169E1;stop-opacity:0.2" />
+    </radialGradient>
+    
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#666" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1600" height="1200" fill="#F8F8FF"/>
+  
+  <!-- タイトル -->
+  <rect x="50" y="30" width="700" height="70" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2F4F4F">マイクロ炉自給自足型モデル都市</text>
+  <text x="400" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4169E1">IT共通基盤アーキテクチャ</text>
+  
+  <!-- 中央のコア基盤 -->
+  <g id="core-foundation">
+    <ellipse cx="800" cy="600" rx="150" ry="100" fill="url(#coreGradient)" stroke="#B8860B" stroke-width="3" filter="url(#shadow)"/>
+    <text x="800" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8B4513">データ基盤層</text>
+    <text x="800" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#8B4513">統合データプラットフォーム</text>
+    <text x="800" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#8B4513">マスターデータ管理</text>
+  </g>
+  
+  <!-- Layer 1: 認証・認可基盤層（上部） -->
+  <g id="layer1">
+    <rect x="600" y="150" width="400" height="80" fill="url(#layerGradient1)" stroke="#CD5C5C" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="800" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B0000">認証・認可基盤層</text>
+    <text x="800" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8B0000">統合認証システム（SSO/MFA）</text>
+    <text x="800" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8B0000">権限管理システム（RBAC/ABAC）</text>
+    
+    <!-- 接続線 -->
+    <line x1="800" y1="230" x2="800" y2="500" stroke="#FF6347" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 2: 通信・ネットワーク基盤層（右上） -->
+  <g id="layer2">
+    <rect x="1150" y="200" width="400" height="80" fill="url(#layerGradient2)" stroke="#4682B4" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="1350" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#191970">通信・ネットワーク基盤層</text>
+    <text x="1350" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#191970">5G/6Gプライベートネットワーク</text>
+    <text x="1350" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#191970">統合APIゲートウェイ</text>
+    
+    <!-- 接続線 -->
+    <line x1="1150" y1="240" x2="950" y2="600" stroke="#4169E1" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 3: AI・機械学習基盤層（右） -->
+  <g id="layer3">
+    <rect x="1150" y="350" width="400" height="80" fill="url(#layerGradient3)" stroke="#228B22" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="1350" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006400">AI・機械学習基盤層</text>
+    <text x="1350" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#006400">MLOpsプラットフォーム</text>
+    <text x="1350" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#006400">都市特化AI機能</text>
+    
+    <!-- 接続線 -->
+    <line x1="1150" y1="390" x2="950" y2="600" stroke="#32CD32" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 4: IoT・センサー基盤層（右下） -->
+  <g id="layer4">
+    <rect x="1150" y="500" width="400" height="80" fill="url(#layerGradient4)" stroke="#B8860B" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="1350" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B4513">IoT・センサー基盤層</text>
+    <text x="1350" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8B4513">センサーネットワーク</text>
+    <text x="1350" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8B4513">デバイス管理</text>
+    
+    <!-- 接続線 -->
+    <line x1="1150" y1="540" x2="950" y2="600" stroke="#DAA520" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 5: セキュリティ基盤層（下部） -->
+  <g id="layer5">
+    <rect x="600" y="800" width="400" height="80" fill="url(#layerGradient5)" stroke="#9370DB" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="800" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4B0082">セキュリティ基盤層</text>
+    <text x="800" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4B0082">ゼロトラストアーキテクチャ</text>
+    <text x="800" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4B0082">プライバシー保護</text>
+    
+    <!-- 接続線 -->
+    <line x1="800" y1="800" x2="800" y2="700" stroke="#8A2BE2" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 6: アプリケーション基盤層（左下） -->
+  <g id="layer6">
+    <rect x="50" y="500" width="400" height="80" fill="url(#layerGradient2)" stroke="#4682B4" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="250" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#191970">アプリケーション基盤層</text>
+    <text x="250" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#191970">コンテナオーケストレーション</text>
+    <text x="250" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#191970">共通機能サービス</text>
+    
+    <!-- 接続線 -->
+    <line x1="450" y1="540" x2="650" y2="600" stroke="#4169E1" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 7: UI/UX基盤層（左） -->
+  <g id="layer7">
+    <rect x="50" y="350" width="400" height="80" fill="url(#layerGradient3)" stroke="#228B22" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="250" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#006400">UI/UX基盤層</text>
+    <text x="250" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#006400">マルチチャネル対応</text>
+    <text x="250" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#006400">アクセシビリティ</text>
+    
+    <!-- 接続線 -->
+    <line x1="450" y1="390" x2="650" y2="600" stroke="#32CD32" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 8: 統合・オーケストレーション基盤層（左上） -->
+  <g id="layer8">
+    <rect x="50" y="200" width="400" height="80" fill="url(#layerGradient4)" stroke="#B8860B" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="250" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B4513">統合・オーケストレーション基盤層</text>
+    <text x="250" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8B4513">システム間連携（ESB）</text>
+    <text x="250" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#8B4513">ビジネスプロセス管理（BPM）</text>
+    
+    <!-- 接続線 -->
+    <line x1="450" y1="240" x2="650" y2="600" stroke="#DAA520" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- Layer 9: 運用・監視基盤層（上部中央） -->
+  <g id="layer9">
+    <rect x="300" y="950" width="400" height="80" fill="url(#layerGradient5)" stroke="#9370DB" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="500" y="975" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4B0082">運用・監視基盤層</text>
+    <text x="500" y="995" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4B0082">統合監視プラットフォーム</text>
+    <text x="500" y="1010" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4B0082">運用自動化</text>
+    
+    <!-- 接続線 -->
+    <line x1="500" y1="950" x2="800" y2="700" stroke="#8A2BE2" stroke-width="3" opacity="0.8"/>
+  </g>
+  
+  <!-- 新規IT・SaaSの統合フロー -->
+  <g id="integration-flow">
+    <rect x="850" y="950" width="400" height="80" fill="rgba(255,255,255,0.95)" stroke="#FF4500" stroke-width="3" rx="10" filter="url(#shadow)"/>
+    <text x="1050" y="975" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF4500">新規IT・SaaS統合フロー</text>
+    <text x="1050" y="995" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FF4500">評価 → PoC → 統合 → 運用</text>
+    <text x="1050" y="1010" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FF4500">標準API・認証連携対応</text>
+    
+    <!-- 統合フローの矢印 -->
+    <path d="M 850,990 Q 825,600 800,600" fill="none" stroke="#FF4500" stroke-width="3" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- 都市特化機能（右側詳細） -->
+  <g id="city-specific">
+    <rect x="1200" y="650" width="350" height="200" fill="rgba(240,248,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="1375" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4169E1">都市特化機能</text>
+    
+    <!-- マイクロ炉管理 -->
+    <rect x="1220" y="690" width="100" height="30" fill="#FFD700" opacity="0.8" rx="5"/>
+    <text x="1270" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8B4513">マイクロ炉管理</text>
+    
+    <!-- 住民サービス -->
+    <rect x="1330" y="690" width="100" height="30" fill="#98FB98" opacity="0.8" rx="5"/>
+    <text x="1380" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#006400">住民サービス</text>
+    
+    <!-- 農業IoT -->
+    <rect x="1440" y="690" width="100" height="30" fill="#F0E68C" opacity="0.8" rx="5"/>
+    <text x="1490" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8B4513">農業IoT</text>
+    
+    <!-- 製造管理 -->
+    <rect x="1220" y="730" width="100" height="30" fill="#DDA0DD" opacity="0.8" rx="5"/>
+    <text x="1270" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4B0082">製造管理</text>
+    
+    <!-- 交通最適化 -->
+    <rect x="1330" y="730" width="100" height="30" fill="#87CEEB" opacity="0.8" rx="5"/>
+    <text x="1380" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#191970">交通最適化</text>
+    
+    <!-- 健康管理 -->
+    <rect x="1440" y="730" width="100" height="30" fill="#FFA07A" opacity="0.8" rx="5"/>
+    <text x="1490" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8B0000">健康管理</text>
+    
+    <!-- 教育支援 -->
+    <rect x="1220" y="770" width="100" height="30" fill="#E0E0E0" opacity="0.8" rx="5"/>
+    <text x="1270" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">教育支援</text>
+    
+    <!-- 災害対応 -->
+    <rect x="1330" y="770" width="100" height="30" fill="#FFB6C1" opacity="0.8" rx="5"/>
+    <text x="1380" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8B008B">災害対応</text>
+    
+    <!-- 環境監視 -->
+    <rect x="1440" y="770" width="100" height="30" fill="#AFEEEE" opacity="0.8" rx="5"/>
+    <text x="1490" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#008B8B">環境監視</text>
+    
+    <!-- エネルギー最適化 -->
+    <rect x="1275" y="810" width="120" height="30" fill="#FFEFD5" opacity="0.8" rx="5"/>
+    <text x="1335" y="828" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#D2691E">エネルギー最適化</text>
+    
+    <!-- 接続線 -->
+    <line x1="1200" y1="750" x2="950" y2="600" stroke="#4169E1" stroke-width="2" opacity="0.6" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- 外部システム連携（左側詳細） -->
+  <g id="external-systems">
+    <rect x="50" y="650" width="350" height="200" fill="rgba(255,250,240,0.95)" stroke="#FF8C00" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="225" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF8C00">外部システム連携</text>
+    
+    <!-- 政府システム -->
+    <rect x="70" y="690" width="90" height="30" fill="#E6E6FA" opacity="0.8" rx="5"/>
+    <text x="115" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4B0082">政府システム</text>
+    
+    <!-- 金融機関 -->
+    <rect x="170" y="690" width="90" height="30" fill="#F0F8FF" opacity="0.8" rx="5"/>
+    <text x="215" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4169E1">金融機関</text>
+    
+    <!-- 医療機関 -->
+    <rect x="270" y="690" width="90" height="30" fill="#F0FFF0" opacity="0.8" rx="5"/>
+    <text x="315" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#228B22">医療機関</text>
+    
+    <!-- 教育機関 -->
+    <rect x="70" y="730" width="90" height="30" fill="#FFF8DC" opacity="0.8" rx="5"/>
+    <text x="115" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#B8860B">教育機関</text>
+    
+    <!-- 物流業者 -->
+    <rect x="170" y="730" width="90" height="30" fill="#FFE4E1" opacity="0.8" rx="5"/>
+    <text x="215" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#CD5C5C">物流業者</text>
+    
+    <!-- 研究機関 -->
+    <rect x="270" y="730" width="90" height="30" fill="#F5F0FF" opacity="0.8" rx="5"/>
+    <text x="315" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#9370DB">研究機関</text>
+    
+    <!-- 他都市 -->
+    <rect x="70" y="770" width="90" height="30" fill="#E0FFE0" opacity="0.8" rx="5"/>
+    <text x="115" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#32CD32">他都市</text>
+    
+    <!-- 気象庁 -->
+    <rect x="170" y="770" width="90" height="30" fill="#E0F6FF" opacity="0.8" rx="5"/>
+    <text x="215" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4682B4">気象庁</text>
+    
+    <!-- 国際機関 -->
+    <rect x="270" y="770" width="90" height="30" fill="#FFF0F5" opacity="0.8" rx="5"/>
+    <text x="315" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8B008B">国際機関</text>
+    
+    <!-- クラウドサービス -->
+    <rect x="120" y="810" width="120" height="30" fill="#F0F0F0" opacity="0.8" rx="5"/>
+    <text x="180" y="828" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">クラウドサービス</text>
+    
+    <!-- 接続線 -->
+    <line x1="400" y1="750" x2="650" y2="600" stroke="#FF8C00" stroke-width="2" opacity="0.6" stroke-dasharray="3,3"/>
+  </g>
+  
+  <!-- データフロー表示 -->
+  <g id="data-flow">
+    <!-- リアルタイムデータフロー -->
+    <circle cx="700" cy="400" r="6" fill="#00FFFF" opacity="0.8">
+      <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="720" y="405" font-family="Arial, sans-serif" font-size="10" fill="#008B8B">リアルタイムデータ</text>
+    
+    <circle cx="900" cy="400" r="6" fill="#FFD700" opacity="0.8">
+      <animate attributeName="r" values="6;12;6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="920" y="405" font-family="Arial, sans-serif" font-size="10" fill="#B8860B">バッチデータ</text>
+    
+    <circle cx="800" cy="320" r="6" fill="#FF69B4" opacity="0.8">
+      <animate attributeName="r" values="6;12;6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="820" y="325" font-family="Arial, sans-serif" font-size="10" fill="#8B008B">イベントデータ</text>
+  </g>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF4500"/>
+    </marker>
+  </defs>
+  
+  <!-- 凡例 -->
+  <g id="legend">
+    <rect x="50" y="1050" width="500" height="130" fill="rgba(255,255,255,0.95)" stroke="#2F4F4F" stroke-width="1" rx="5" filter="url(#shadow)"/>
+    <text x="300" y="1070" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">凡例</text>
+    
+    <!-- データフロー -->
+    <circle cx="70" cy="1085" r="4" fill="#00FFFF"/>
+    <text x="85" y="1090" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">リアルタイムデータフロー</text>
+    
+    <circle cx="70" cy="1100" r="4" fill="#FFD700"/>
+    <text x="85" y="1105" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">バッチデータフロー</text>
+    
+    <circle cx="70" cy="1115" r="4" fill="#FF69B4"/>
+    <text x="85" y="1120" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">イベントデータフロー</text>
+    
+    <!-- 接続線 -->
+    <line x1="250" y1="1085" x2="280" y2="1085" stroke="#4169E1" stroke-width="2"/>
+    <text x="290" y="1090" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">基盤間接続</text>
+    
+    <line x1="250" y1="1100" x2="280" y2="1100" stroke="#FF8C00" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="290" y="1105" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">外部システム連携</text>
+    
+    <line x1="250" y1="1115" x2="280" y2="1115" stroke="#FF4500" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="290" y="1120" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">新規SaaS統合</text>
+    
+    <!-- 投資優先順位 -->
+    <text x="70" y="1140" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2F4F4F">投資優先順位:</text>
+    <text x="140" y="1140" font-family="Arial, sans-serif" font-size="9" fill="#FF4500">Phase1: データ・認証・通信</text>
+    <text x="140" y="1155" font-family="Arial, sans-serif" font-size="9" fill="#32CD32">Phase2: AI・IoT・セキュリティ</text>
+    <text x="140" y="1170" font-family="Arial, sans-serif" font-size="9" fill="#4169E1">Phase3: アプリ・統合・運用</text>
+  </g>
+  
+  <!-- 技術トレンド対応（右下エリア） -->
+  <g id="future-tech">
+    <rect x="1200" y="1050" width="350" height="130" fill="rgba(255,245,238,0.95)" stroke="#FF6347" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="1375" y="1070" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FF6347">将来技術対応</text>
+    
+    <rect x="1220" y="1085" width="80" height="20" fill="#E6E6FA" opacity="0.8" rx="3"/>
+    <text x="1260" y="1097" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4B0082">量子コンピュータ</text>
+    
+    <rect x="1310" y="1085" width="60" height="20" fill="#F0F8FF" opacity="0.8" rx="3"/>
+    <text x="1340" y="1097" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4169E1">6G通信</text>
+    
+    <rect x="1380" y="1085" width="80" height="20" fill="#F0FFF0" opacity="0.8" rx="3"/>
+    <text x="1420" y="1097" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#228B22">ブロックチェーン</text>
+    
+    <rect x="1220" y="1115" width="70" height="20" fill="#FFF8DC" opacity="0.8" rx="3"/>
+    <text x="1255" y="1127" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#B8860B">メタバース</text>
+    
+    <rect x="1300" y="1115" width="80" height="20" fill="#FFE4E1" opacity="0.8" rx="3"/>
+    <text x="1340" y="1127" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#CD5C5C">デジタルツイン</text>
+    
+    <rect x="1390" y="1115" width="70" height="20" fill="#F5F0FF" opacity="0.8" rx="3"/>
+    <text x="1425" y="1127" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#9370DB">エッジAI</text>
+    
+    <rect x="1260" y="1145" width="100" height="20" fill="#E0FFE0" opacity="0.8" rx="3"/>
+    <text x="1310" y="1157" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#32CD32">サステナブルIT</text>
+  </g>
+  
+  <!-- 住民Well-Being指標（中央下部） -->
+  <g id="wellbeing-metrics">
+    <rect x="600" y="1050" width="550" height="130" fill="rgba(245,255,250,0.95)" stroke="#32CD32" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="875" y="1070" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#32CD32">Well-Being最適化指標</text>
+    
+    <!-- メトリクス表示 -->
+    <g id="metrics-dashboard">
+      <!-- 健康スコア -->
+      <rect x="620" y="1085" width="100" height="30" fill="#98FB98" opacity="0.8" rx="5"/>
+      <text x="670" y="1095" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#006400">健康スコア</text>
+      <text x="670" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#006400">92/100</text>
+      
+      <!-- 幸福度指数 -->
+      <rect x="730" y="1085" width="100" height="30" fill="#87CEEB" opacity="0.8" rx="5"/>
+      <text x="780" y="1095" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#191970">幸福度指数</text>
+      <text x="780" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#191970">4.8/5.0</text>
+      
+      <!-- 生産性指標 -->
+      <rect x="840" y="1085" width="100" height="30" fill="#DDA0DD" opacity="0.8" rx="5"/>
+      <text x="890" y="1095" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#4B0082">生産性指標</text>
+      <text x="890" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#4B0082">135%</text>
+      
+      <!-- 環境指標 -->
+      <rect x="950" y="1085" width="100" height="30" fill="#F0E68C" opacity="0.8" rx="5"/>
+      <text x="1000" y="1095" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#8B4513">環境指標</text>
+      <text x="1000" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">Carbon-</text>
+      
+      <!-- 学習指標 -->
+      <rect x="1060" y="1085" width="80" height="30" fill="#FFB6C1" opacity="0.8" rx="5"/>
+      <text x="1100" y="1095" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#8B008B">学習指標</text>
+      <text x="1100" y="1108" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B008B">98%</text>
+      
+      <!-- コミュニティ活性度 -->
+      <rect x="680" y="1125" width="120" height="30" fill="#AFEEEE" opacity="0.8" rx="5"/>
+      <text x="740" y="1135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#008B8B">コミュニティ活性度</text>
+      <text x="740" y="1148" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#008B8B">87%参加率</text>
+      
+      <!-- 安全・安心指標 -->
+      <rect x="810" y="1125" width="120" height="30" fill="#FFEFD5" opacity="0.8" rx="5"/>
+      <text x="870" y="1135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#D2691E">安全・安心指標</text>
+      <text x="870" y="1148" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#D2691E">99.9%稼働</text>
+      
+      <!-- 満足度 -->
+      <rect x="940" y="1125" width="120" height="30" fill="#E0E0E0" opacity="0.8" rx="5"/>
+      <text x="1000" y="1135" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2F4F4F">住民満足度</text>
+      <text x="1000" y="1148" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">94%</text>
+    </g>
+  </g>
+  
+  <!-- マイクロ炉エネルギー管理（特別表示） -->
+  <g id="micro-reactor">
+    <rect x="900" y="120" width="200" height="100" fill="url(#connectionGlow)" stroke="#00FFFF" stroke-width="3" rx="10" filter="url(#shadow)"/>
+    <text x="1000" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#008B8B">マイクロ炉制御</text>
+    <text x="1000" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#008B8B">500kW 安定供給</text>
+    <text x="1000" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#008B8B">AIによる需給最適化</text>
+    <text x="1000" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#008B8B">25年間燃料交換不要</text>
+    <text x="1000" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#008B8B">地下15m安全設置</text>
+    
+    <!-- エネルギーフロー -->
+    <line x1="1000" y1="220" x2="800" y2="500" stroke="#00FFFF" stroke-width="4" opacity="0.8">
+      <animate attributeName="stroke-dasharray" values="0,10;10,0" dur="1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- スマートシティ効果表示 -->
+  <g id="smart-effects">
+    <circle cx="800" cy="450" r="80" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.6">
+      <animate attributeName="r" values="80;100;80" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="450" r="60" fill="none" stroke="#32CD32" stroke-width="2" opacity="0.6">
+      <animate attributeName="r" values="60;80;60" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="450" r="40" fill="none" stroke="#4169E1" stroke-width="2" opacity="0.6">
+      <animate attributeName="r" values="40;60;40" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 25年サイクル表示 -->
+  <g id="lifecycle">
+    <rect x="750" y="50" width="100" height="60" fill="rgba(255,215,0,0.9)" stroke="#B8860B" stroke-width="2" rx="8" filter="url(#shadow)"/>
+    <text x="800" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B4513">25年サイクル</text>
+    <text x="800" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8B4513">2040-2065</text>
+    <text x="800" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8B4513">継続的進化</text>
+    
+    <!-- サイクル矢印 -->
+    <path d="M 750,80 Q 720,80 720,110 Q 720,140 750,140 Q 780,140 780,110 Q 780,80 750,80" 
+          fill="none" stroke="#B8860B" stroke-width="2" marker-end="url(#cycle-arrow)"/>
+  </g>
+  
+  <!-- サイクル矢印マーカー -->
+  <defs>
+    <marker id="cycle-arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#B8860B"/>
+    </marker>
+  </defs>
+</svg>
