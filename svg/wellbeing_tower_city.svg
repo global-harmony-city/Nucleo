@@ -1,0 +1,463 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- グラデーション定義 -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="towerAGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4B5;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#DEB887;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="towerBGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6E6FA;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#9370DB;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="towerCGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#98FB98;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#32CD32;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <radialGradient id="reactorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#4169E1;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4169E1;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="undergroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- 新規追加: エネルギーフロー用グラデーション -->
+    <linearGradient id="energyFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#FF6347;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- アニメーション用 -->
+    <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1">
+        <animate attributeName="stop-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#4169E1;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1600" height="1200" fill="url(#skyGradient)"/>
+  
+  <!-- 地面 -->
+  <rect x="0" y="650" width="1600" height="550" fill="#228B22" opacity="0.3"/>
+  
+  <!-- タイトル -->
+  <rect x="50" y="20" width="900" height="100" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="3" rx="15"/>
+  <text x="500" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2F4F4F">マイクロ炉搭載 Well-Being Tower City</text>
+  <text x="500" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4169E1">人口1000人・超高層マンション3棟・敷地5ha・完全自給自足</text>
+  <text x="500" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2F4F4F">Energy Independent • Carbon Neutral • Smart City 2025</text>
+  <text x="500" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FF6347">住民税大幅減税 + 年間30万円還元 + 世界最高水準サービス</text>
+
+  <!-- タワーA: 居住専用棟（左） -->
+  <g id="tower-a">
+    <rect x="150" y="150" width="120" height="500" fill="url(#towerAGradient)" stroke="#DEB887" stroke-width="3" rx="10"/>
+    <text x="210" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B4513">タワーA</text>
+    <text x="210" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#8B4513">居住専用棟</text>
+    <text x="210" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">50階建て・360戸</text>
+    
+    <!-- 階層表示（改良版） -->
+    <text x="160" y="180" font-family="Arial, sans-serif" font-size="8" fill="white">50F</text>
+    <text x="160" y="200" font-family="Arial, sans-serif" font-size="8" fill="white">45F</text>
+    <text x="160" y="250" font-family="Arial, sans-serif" font-size="8" fill="white">40F</text>
+    <text x="160" y="300" font-family="Arial, sans-serif" font-size="8" fill="white">30F</text>
+    <text x="160" y="350" font-family="Arial, sans-serif" font-size="8" fill="white">20F</text>
+    <text x="160" y="400" font-family="Arial, sans-serif" font-size="8" fill="white">10F</text>
+    <text x="160" y="450" font-family="Arial, sans-serif" font-size="8" fill="white">5F</text>
+    <text x="160" y="500" font-family="Arial, sans-serif" font-size="8" fill="white">1F</text>
+    
+    <!-- 住戸窓の表現（より詳細） -->
+    <g fill="#FFD700" opacity="0.8">
+      <!-- 50階部分 -->
+      <rect x="170" y="170" width="8" height="6"/>
+      <rect x="185" y="170" width="8" height="6"/>
+      <rect x="200" y="170" width="8" height="6"/>
+      <rect x="215" y="170" width="8" height="6"/>
+      <rect x="230" y="170" width="8" height="6"/>
+      <rect x="245" y="170" width="8" height="6"/>
+      
+      <!-- 階層ごとの窓パターン -->
+      <rect x="170" y="190" width="8" height="6"/>
+      <rect x="185" y="190" width="8" height="6"/>
+      <rect x="200" y="190" width="8" height="6"/>
+      <rect x="215" y="190" width="8" height="6"/>
+      <rect x="230" y="190" width="8" height="6"/>
+      <rect x="245" y="190" width="8" height="6"/>
+      
+      <!-- 中層部（パターン表示） -->
+      <rect x="170" y="250" width="8" height="6"/>
+      <rect x="185" y="250" width="8" height="6"/>
+      <rect x="200" y="250" width="8" height="6"/>
+      <rect x="215" y="250" width="8" height="6"/>
+      <rect x="230" y="250" width="8" height="6"/>
+      <rect x="245" y="250" width="8" height="6"/>
+      
+      <!-- さらに細かい窓パターン -->
+      <rect x="170" y="300" width="8" height="6"/>
+      <rect x="185" y="300" width="8" height="6"/>
+      <rect x="200" y="300" width="8" height="6"/>
+      <rect x="215" y="300" width="8" height="6"/>
+      <rect x="230" y="300" width="8" height="6"/>
+      <rect x="245" y="300" width="8" height="6"/>
+      
+      <!-- 低層部 -->
+      <rect x="170" y="470" width="8" height="10"/>
+      <rect x="185" y="470" width="8" height="10"/>
+      <rect x="200" y="470" width="8" height="10"/>
+      <rect x="215" y="470" width="8" height="10"/>
+      <rect x="230" y="470" width="8" height="10"/>
+      <rect x="245" y="470" width="8" height="10"/>
+    </g>
+    
+    <!-- エントランス -->
+    <rect x="170" y="620" width="80" height="30" fill="#8B4513"/>
+    <text x="210" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">メインエントランス</text>
+    
+    <!-- 屋上設備追加 -->
+    <rect x="160" y="140" width="100" height="20" fill="#32CD32" opacity="0.8" rx="3"/>
+    <text x="210" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">屋上庭園・ヘリポート</text>
+  </g>
+  
+  <!-- タワーB: 生活・サービス棟（中央） -->
+  <g id="tower-b">
+    <rect x="350" y="250" width="140" height="400" fill="url(#towerBGradient)" stroke="#9370DB" stroke-width="3" rx="10"/>
+    <text x="420" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4B0082">タワーB</text>
+    <text x="420" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4B0082">生活・サービス棟</text>
+    <text x="420" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">40階建て・複合施設</text>
+    
+    <!-- 機能別ゾーン表示（詳細化） -->
+    <rect x="360" y="260" width="120" height="60" fill="#FF69B4" opacity="0.8" rx="3"/>
+    <text x="420" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">31-40F: ホテル</text>
+    <text x="420" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">視察・研修・Airbnb・50室</text>
+    
+    <rect x="360" y="330" width="120" height="60" fill="#4682B4" opacity="0.8" rx="3"/>
+    <text x="420" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">21-30F: オフィス</text>
+    <text x="420" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">IT・コワーキング・起業支援</text>
+    
+    <rect x="360" y="400" width="120" height="60" fill="#32CD32" opacity="0.8" rx="3"/>
+    <text x="420" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">11-20F: 文化・スポーツ</text>
+    <text x="420" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">ジム・プール・シアター</text>
+    
+    <rect x="360" y="470" width="120" height="60" fill="#FF6347" opacity="0.8" rx="3"/>
+    <text x="420" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">6-10F: 医療・教育</text>
+    <text x="420" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">診療所・保育園・学習塾</text>
+    
+    <rect x="360" y="540" width="120" height="60" fill="#FFD700" opacity="0.8" rx="3"/>
+    <text x="420" y="565" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">1-5F: 商業</text>
+    <text x="420" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">スーパー・レストラン・郵便</text>
+    
+    <!-- エントランス -->
+    <rect x="370" y="620" width="100" height="30" fill="#4B0082"/>
+    <text x="420" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">サービスエントランス</text>
+    
+    <!-- 屋上設備 -->
+    <rect x="360" y="240" width="120" height="20" fill="#4682B4" opacity="0.8" rx="3"/>
+    <text x="420" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">通信設備・気象観測</text>
+  </g>
+  
+  <!-- タワーC: 生産・技術棟（右） -->
+  <g id="tower-c">
+    <rect x="570" y="200" width="130" height="450" fill="url(#towerCGradient)" stroke="#32CD32" stroke-width="3" rx="10"/>
+    <text x="635" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#228B22">タワーC</text>
+    <text x="635" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#228B22">生産・技術棟</text>
+    <text x="635" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">45階建て・完全自給</text>
+    
+    <!-- 屋上設備（詳細化） -->
+    <rect x="580" y="200" width="110" height="30" fill="#FFD700" opacity="0.8" rx="3"/>
+    <text x="635" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="black">41-45F: 屋上施設</text>
+    <text x="635" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="black">太陽光・風力・屋上農園</text>
+    
+    <!-- 機能別ゾーン（詳細化） -->
+    <rect x="580" y="240" width="110" height="60" fill="#4169E1" opacity="0.8" rx="3"/>
+    <text x="635" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">31-40F: エネルギー</text>
+    <text x="635" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">制御・蓄電・監視システム</text>
+    
+    <rect x="580" y="310" width="110" height="60" fill="#9370DB" opacity="0.8" rx="3"/>
+    <text x="635" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">21-30F: データセンター</text>
+    <text x="635" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">AI・サーバー・5G基地局</text>
+    
+    <rect x="580" y="380" width="110" height="60" fill="#FF8C00" opacity="0.8" rx="3"/>
+    <text x="635" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">11-20F: 製造・研究</text>
+    <text x="635" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">3Dプリンティング・バイオラボ</text>
+    
+    <rect x="580" y="450" width="110" height="100" fill="#90EE90" opacity="0.8" rx="3"/>
+    <text x="635" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="black">1-10F: 垂直農場</text>
+    <text x="635" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="black">水耕栽培・LED植物工場</text>
+    <text x="635" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="black">年間300トン生産・AI制御</text>
+    
+    <!-- 植物アイコン（より詳細） -->
+    <g fill="#228B22">
+      <circle cx="590" cy="480" r="3"/>
+      <circle cx="600" cy="475" r="3"/>
+      <circle cx="610" cy="480" r="3"/>
+      <circle cx="620" cy="475" r="3"/>
+      <circle cx="630" cy="480" r="3"/>
+      <circle cx="640" cy="475" r="3"/>
+      <circle cx="650" cy="480" r="3"/>
+      <circle cx="660" cy="475" r="3"/>
+      <circle cx="670" cy="480" r="3"/>
+      <circle cx="680" cy="475" r="3"/>
+      
+      <!-- 追加の植物表現 -->
+      <rect x="585" y="490" width="2" height="8"/>
+      <rect x="595" y="485" width="2" height="8"/>
+      <rect x="605" y="490" width="2" height="8"/>
+      <rect x="615" y="485" width="2" height="8"/>
+      <rect x="625" y="490" width="2" height="8"/>
+      <rect x="635" y="485" width="2" height="8"/>
+      <rect x="645" y="490" width="2" height="8"/>
+      <rect x="655" y="485" width="2" height="8"/>
+      <rect x="665" y="490" width="2" height="8"/>
+      <rect x="675" y="485" width="2" height="8"/>
+    </g>
+    
+    <!-- エントランス -->
+    <rect x="585" y="620" width="100" height="30" fill="#228B22"/>
+    <text x="635" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">生産エントランス</text>
+  </g>
+  
+  <!-- 接続ブリッジ（詳細化） -->
+  <g id="connecting-bridges" stroke="#C0C0C0" stroke-width="3" fill="#E0E0E0" opacity="0.8">
+    <!-- A-B間のブリッジ -->
+    <rect x="270" y="300" width="80" height="12" rx="6"/>
+    <rect x="270" y="400" width="80" height="12" rx="6"/>
+    <rect x="270" y="500" width="80" height="12" rx="6"/>
+    
+    <!-- B-C間のブリッジ -->
+    <rect x="490" y="300" width="80" height="12" rx="6"/>
+    <rect x="490" y="400" width="80" height="12" rx="6"/>
+    <rect x="490" y="500" width="80" height="12" rx="6"/>
+    
+    <!-- ブリッジのラベル -->
+    <text x="310" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">連絡橋20F</text>
+    <text x="310" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">連絡橋10F</text>
+    <text x="310" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">連絡橋3F</text>
+    <text x="530" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">連絡橋20F</text>
+    <text x="530" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">連絡橋10F</text>
+    <text x="530" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">連絡橋3F</text>
+  </g>
+  
+  <!-- エネルギーフロー表示（改良版） -->
+  <g id="energy-flow">
+    <!-- マイクロ炉からの電力供給線 -->
+    <path d="M 550 710 Q 420 650 420 350" stroke="url(#energyFlow)" stroke-width="6" fill="none" opacity="0.9"/>
+    <path d="M 550 710 Q 635 650 635 350" stroke="url(#energyFlow)" stroke-width="6" fill="none" opacity="0.9"/>
+    <path d="M 550 710 Q 210 650 210 350" stroke="url(#energyFlow)" stroke-width="6" fill="none" opacity="0.9"/>
+    
+    <!-- エネルギーフローの矢印 -->
+    <polygon points="400,380 410,375 410,385" fill="#FFD700"/>
+    <polygon points="200,380 210,375 210,385" fill="#FFD700"/>
+    <polygon points="620,380 630,375 630,385" fill="#FFD700"/>
+    
+    <!-- エネルギーフローラベル -->
+    <text x="350" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FF8C00" transform="rotate(-35 350 520)">500kW供給</text>
+    <text x="250" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FF8C00" transform="rotate(-55 250 520)">電力・熱・冷却</text>
+    <text x="590" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FF8C00" transform="rotate(35 590 520)">製造・農場電力</text>
+  </g>
+  
+  <!-- 地下施設（詳細化） -->
+  <g id="underground">
+    <rect x="150" y="650" width="800" height="220" fill="url(#undergroundGradient)" stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="550" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#8B4513">地下施設（B1-B3F）</text>
+    
+    <!-- B1F: 駐車場・物流 -->
+    <rect x="170" y="690" width="240" height="50" fill="#C0C0C0" opacity="0.8" rx="3"/>
+    <text x="290" y="705" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="black">B1F: 駐車場・物流センター</text>
+    <text x="290" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="black">EV250台・自動駐車・ドローン基地</text>
+    <text x="290" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="black">災害備蓄・緊急時6ヶ月対応</text>
+    
+    <!-- B2F: マイクロ炉（詳細化） -->
+    <rect x="430" y="690" width="240" height="50" fill="url(#reactorGlow)" rx="3"/>
+    <circle cx="550" cy="715" r="18" fill="url(#pulseGlow)"/>
+    <text x="550" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">SMR</text>
+    <text x="550" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4169E1">B2F: マイクロ炉中枢</text>
+    <text x="550" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">500kW・25年間無給油・完全安全</text>
+    
+    <!-- 放射線マーク -->
+    <g transform="translate(520,705)" fill="#00FFFF">
+      <circle r="3"/>
+      <path d="M 0,-8 L -7,4 L 7,4 Z" opacity="0.6"/>
+    </g>
+    <g transform="translate(580,705)" fill="#00FFFF">
+      <circle r="3"/>
+      <path d="M 0,-8 L -7,4 L 7,4 Z" opacity="0.6"/>
+    </g>
+    
+    <!-- B3F: インフラ -->
+    <rect x="690" y="690" width="240" height="50" fill="#4169E1" opacity="0.7" rx="3"/>
+    <text x="810" y="705" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">B3F: 上下水道・廃棄物処理</text>
+    <text x="810" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">完全循環・雨水利用・バイオガス</text>
+    <text x="810" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">廃棄物リサイクル率90%・ゼロエミッション</text>
+    
+    <!-- 地下施設の詳細情報 -->
+    <rect x="170" y="760" width="760" height="90" fill="rgba(255,255,255,0.95)" stroke="#654321" stroke-width="1" rx="5"/>
+    <text x="550" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#654321">地下インフラ詳細仕様</text>
+    <text x="190" y="800" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• マイクロ炉: 小型モジュール炉(SMR)・500kW出力・25年無給油・完全安全設計・国際基準適合</text>
+    <text x="190" y="815" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 蓄電池: リチウムイオン1000kWh・停電時48時間完全自立・太陽光連携</text>
+    <text x="190" y="830" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 水処理: 雨水回収・中水利用・完全循環システム・1日500㎥処理能力</text>
+    <text x="500" y="800" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 廃棄物: バイオガス発酵・コンポスト・リサイクル90%・ゼロエミッション達成</text>
+    <text x="500" y="815" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 駐車場: EV充電設備250台・自動駐車システム・V2H機能</text>
+    <text x="500" y="830" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 備蓄: 6ヶ月分食料・3日分水・医療用品・災害対応完備</text>
+  </g>
+
+  <!-- 周辺環境（詳細化） -->
+  <g id="surroundings">
+    <!-- 緑地・公園 -->
+    <ellipse cx="100" cy="400" rx="80" ry="60" fill="#90EE90" opacity="0.6"/>
+    <text x="100" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#228B22">自然公園</text>
+    <text x="100" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#228B22">生態系保護・散策路</text>
+    
+    <ellipse cx="800" cy="400" rx="80" ry="60" fill="#90EE90" opacity="0.6"/>
+    <text x="800" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#228B22">里山環境</text>
+    <text x="800" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#228B22">自然学習・体験農場</text>
+    
+    <!-- 道路・アクセス（詳細化） -->
+    <rect x="0" y="480" width="150" height="25" fill="#696969"/>
+    <rect x="700" y="480" width="200" height="25" fill="#696969"/>
+    <text x="75" y="497" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">都市部20分</text>
+    <text x="800" y="497" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">高速IC 5分</text>
+    
+    <!-- 交通インフラ -->
+    <rect x="50" y="520" width="100" height="20" fill="#4682B4" opacity="0.8" rx="3"/>
+    <text x="100" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">電車駅15分</text>
+    
+    <rect x="750" y="520" width="100" height="20" fill="#FF6347" opacity="0.8" rx="3"/>
+    <text x="800" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">空港30分</text>
+  </g>
+
+  <!-- 詳細情報パネル（拡張版） -->
+  <g id="info-panel">
+    <rect x="1000" y="120" width="550" height="680" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10"/>
+    <text x="1275" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#4169E1">Well-Being Tower City 完全仕様書</text>
+    
+    <!-- 基本仕様 -->
+    <text x="1020" y="175" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">🏢 基本仕様</text>
+    <text x="1020" y="195" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 敷地面積: 5ha（従来住宅街の1/100面積で同等収容）</text>
+    <text x="1020" y="210" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 総戸数: 360戸（1-4LDK・平均2.8人/戸・総人口1000人）</text>
+    <text x="1020" y="225" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 建物高さ: 最高200m・平均150m（3棟構成）</text>
+    <text x="1020" y="240" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 初期投資: 35億円（従来都市開発の1/10コスト）</text>
+    <text x="1020" y="255" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 建設期間: 3年（モジュール工法・並行建設）</text>
+    
+    <!-- エネルギーシステム -->
+    <text x="1020" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">⚡ エネルギーシステム</text>
+    <text x="1020" y="305" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• マイクロ炉: 小型モジュール炉500kW（25年間無給油）</text>
+    <text x="1020" y="320" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 太陽光発電: 200kW（屋上・壁面・追尾式）</text>
+    <text x="1020" y="335" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 風力発電: 50kW（小型垂直軸・低騒音）</text>
+    <text x="1020" y="350" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 蓄電池: 1000kWh（停電時48時間完全自立）</text>
+    <text x="1020" y="365" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• エネルギー完全自給 + 年間200万円外部売電収入</text>
+    
+    <!-- 生産システム -->
+    <text x="1020" y="395" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">🌱 食料生産システム</text>
+    <text x="1020" y="415" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 垂直農場: 10層・年間300トン野菜生産（LED・AI制御）</text>
+    <text x="1020" y="430" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 水耕栽培: 土壌不要・農薬不使用・年中収穫</text>
+    <text x="1020" y="445" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 食料自給率: 80%達成（残り20%は地域連携）</text>
+    <text x="1020" y="460" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 住民食費: 月3万円→1.5万円（50%削減効果）</text>
+    <text x="1020" y="475" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 余剰農産物: 年間50トン外部販売・500万円収入</text>
+    
+    <!-- 住民メリット -->
+    <text x="1020" y="505" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">💰 住民メリット（年間削減額）</text>
+    <text x="1020" y="525" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 住居費: 家賃20-30%削減（エネルギー無料・設備共用）</text>
+    <text x="1020" y="540" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 光熱費: ゼロ円（完全自給・売電収入で還元）</text>
+    <text x="1020" y="555" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 食費: 年間18万円削減（新鮮野菜無料提供）</text>
+    <text x="1020" y="570" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 交通費: 年間12万円削減（施設内完結・EV共用）</text>
+    <text x="1020" y="585" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 医療費: 年間8万円削減（予防医療・健康管理）</text>
+    <text x="1020" y="600" font-family="Arial, sans-serif" font-size="11" fill="#FF6347">• 合計削減: 年間50万円 + 市から年間30万円還元</text>
+    
+    <!-- スマートシティ機能 -->
+    <text x="1020" y="630" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">🤖 スマートシティ機能</text>
+    <text x="1020" y="650" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• AI管理: エネルギー・農業・セキュリティ・交通</text>
+    <text x="1020" y="665" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• IoT機器: 全住戸・共用部・農場に10000個設置</text>
+    <text x="1020" y="680" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 5G/6G: 超高速通信・リモートワーク完全対応</text>
+    <text x="1020" y="695" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• セキュリティ: 顔認証・行動AI・24時間監視</text>
+    <text x="1020" y="710" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 健康管理: ウェアラブル・定期検診・予防医療</text>
+    
+    <!-- 環境性能 -->
+    <text x="1020" y="740" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">🌍 環境性能</text>
+    <text x="1020" y="760" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• CO₂排出: マイナス80%（カーボンネガティブ達成）</text>
+    <text x="1020" y="775" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 廃棄物: リサイクル率90%・バイオガス活用</text>
+    <text x="1020" y="790" font-family="Arial, sans-serif" font-size="11" fill="#2F4F4F">• 水資源: 雨水利用・中水処理・100%循環</text>
+  </g>
+
+  <!-- データフロー表示（新規追加） -->
+  <g id="data-flow" opacity="0.7">
+    <!-- データセンターからの情報線 -->
+    <path d="M 635 335 Q 500 300 210 300" stroke="#9370DB" stroke-width="3" stroke-dasharray="5,5" fill="none"/>
+    <path d="M 635 335 Q 500 300 420 300" stroke="#9370DB" stroke-width="3" stroke-dasharray="5,5" fill="none"/>
+    
+    <text x="450" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#9370DB">AI制御・データ管理</text>
+  </g>
+
+  <!-- 安全・防災表示（新規追加） -->
+  <g id="safety-systems">
+    <rect x="750" y="580" width="200" height="60" fill="rgba(255,0,0,0.1)" stroke="#FF0000" stroke-width="2" rx="5"/>
+    <text x="850" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FF0000">緊急時対応システム</text>
+    <text x="850" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• ヘリポート・緊急医療</text>
+    <text x="850" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 6ヶ月完全自立可能</text>
+    <text x="850" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 地震・津波・停電対応</text>
+  </g>
+
+  <!-- 建設スケジュール（新規追加） -->
+  <g id="schedule">
+    <rect x="50" y="850" width="900" height="120" fill="rgba(255,255,255,0.9)" stroke="#4169E1" stroke-width="2" rx="10"/>
+    <text x="500" y="875" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4169E1">建設スケジュール・フェーズ計画</text>
+    
+    <!-- フェーズ1 -->
+    <rect x="70" y="890" width="200" height="25" fill="#90EE90" opacity="0.8" rx="3"/>
+    <text x="170" y="907" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="black">Phase 1: インフラ（6ヶ月）</text>
+    <text x="70" y="925" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">地下施設・マイクロ炉・基礎工事</text>
+    
+    <!-- フェーズ2 -->
+    <rect x="290" y="890" width="200" height="25" fill="#FFD700" opacity="0.8" rx="3"/>
+    <text x="390" y="907" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="black">Phase 2: 構造体（18ヶ月）</text>
+    <text x="290" y="925" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">3棟同時建設・モジュール工法</text>
+    
+    <!-- フェーズ3 -->
+    <rect x="510" y="890" width="200" height="25" fill="#FF6347" opacity="0.8" rx="3"/>
+    <text x="610" y="907" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Phase 3: 設備（12ヶ月）</text>
+    <text x="510" y="925" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">内装・農場・AI・試運転</text>
+    
+    <!-- 入居開始 -->
+    <rect x="730" y="890" width="200" height="25" fill="#4169E1" opacity="0.8" rx="3"/>
+    <text x="830" y="907" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">入居開始・運用（継続）</text>
+    <text x="730" y="925" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">段階入居・コミュニティ形成</text>
+    
+    <!-- タイムライン -->
+    <line x1="70" y1="940" x2="930" y2="940" stroke="#4169E1" stroke-width="3"/>
+    <text x="70" y="955" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">2025年開始</text>
+    <text x="500" y="955" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">2027年中期</text>
+    <text x="930" y="955" text-anchor="end" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">2028年完成</text>
+  </g>
+
+  <!-- ロゴ・認証マーク（新規追加） -->
+  <g id="certifications">
+    <rect x="1000" y="820" width="250" height="80" fill="rgba(255,255,255,0.9)" stroke="#32CD32" stroke-width="2" rx="5"/>
+    <text x="1125" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#32CD32">環境認証・規格適合</text>
+    <text x="1010" y="860" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">✓ ISO14001環境マネジメント</text>
+    <text x="1010" y="875" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">✓ LEED Platinum認証</text>
+    <text x="1010" y="890" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">✓ 国際原子力機関(IAEA)認証</text>
+    
+    <rect x="1270" y="820" width="280" height="80" fill="rgba(255,255,255,0.9)" stroke="#4169E1" stroke-width="2" rx="5"/>
+    <text x="1410" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4169E1">スマートシティ認定</text>
+    <text x="1280" y="860" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">✓ 国連SDGs モデル都市</text>
+    <text x="1280" y="875" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">✓ 内閣府 Society5.0実証</text>
+    <text x="1280" y="890" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">✓ カーボンニュートラル都市</text>
+  </g>
+
+  <!-- フッター -->
+  <rect x="50" y="1000" width="1500" height="80" fill="rgba(0,0,0,0.8)" rx="10"/>
+  <text x="800" y="1025" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Well-Being Tower City - 持続可能な未来都市のモデル</text>
+  <text x="800" y="1045" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#87CEEB">人と自然と技術が調和する、新しい都市の形</text>
+  <text x="800" y="1065" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#C0C0C0">© 2025 Well-Being Tower City Project | 設計・開発: Advanced Urban Solutions</text>
+</svg>
