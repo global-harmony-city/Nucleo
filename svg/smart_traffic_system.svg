@@ -1,0 +1,464 @@
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- グラデーション定義 -->
+    <linearGradient id="roadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#696969;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F4F4F;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="busRouteGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#32CD32;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#00FF00;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#32CD32;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <radialGradient id="aiControlGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4169E1;stop-opacity:0.3" />
+    </radialGradient>
+    
+    <linearGradient id="walkingPathGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#98FB98;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#90EE90;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- アニメーション定義 -->
+    <animateTransform id="busMove" attributeName="transform" type="translate"
+      values="0,0; 100,0; 100,100; 0,100; 0,0" dur="20s" repeatCount="indefinite"/>
+      
+    <!-- マーカー定義 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF6347"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1600" height="1200" fill="#F0F8FF"/>
+  
+  <!-- タイトル -->
+  <rect x="20" y="20" width="700" height="80" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10"/>
+  <text x="370" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2F4F4F">マイクロ炉自給自足型モデル都市</text>
+  <text x="370" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4169E1">完全自動交通システム統合図</text>
+  <text x="370" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2F4F4F">AI統合制御・100%電動化・ゼロエミッション</text>
+  
+  <!-- 中央AI制御タワー -->
+  <g id="ai-control-center">
+    <circle cx="800" cy="400" r="80" fill="url(#aiControlGlow)"/>
+    <rect x="760" y="360" width="80" height="80" fill="#4169E1" rx="10"/>
+    <rect x="770" y="370" width="60" height="60" fill="#00FFFF" opacity="0.7" rx="5"/>
+    <circle cx="790" cy="390" r="8" fill="#FFD700"/>
+    <circle cx="810" cy="390" r="8" fill="#FFD700"/>
+    <circle cx="790" cy="410" r="8" fill="#FFD700"/>
+    <circle cx="810" cy="410" r="8" fill="#FFD700"/>
+    <text x="800" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4169E1">AI統合交通管制センター</text>
+    <text x="800" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">AITS (AI Integrated Traffic System)</text>
+    <text x="800" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4169E1">中央制御AI</text>
+    <text x="800" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">リアルタイム制御 <10ms</text>
+  </g>
+  
+  <!-- 主要道路ネットワーク -->
+  <g id="road-network">
+    <!-- 環状道路 -->
+    <ellipse cx="800" cy="400" rx="300" ry="200" fill="none" stroke="url(#roadGradient)" stroke-width="25" opacity="0.8"/>
+    
+    <!-- 十字道路 -->
+    <rect x="650" y="120" width="300" height="20" fill="url(#roadGradient)" rx="10"/>
+    <rect x="790" y="200" width="20" height="400" fill="url(#roadGradient)" rx="10"/>
+    
+    <!-- 外部アクセス道路 -->
+    <rect x="950" y="380" width="200" height="20" fill="url(#roadGradient)" rx="10"/>
+    <text x="1050" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">高速道路IC 20分</text>
+    
+    <rect x="300" y="380" width="200" height="20" fill="url(#roadGradient)" rx="10"/>
+    <text x="400" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">鉄道駅 15分</text>
+  </g>
+  
+  <!-- 自動運転バス路線 -->
+  <g id="bus-system">
+    <!-- バス専用レーン -->
+    <ellipse cx="800" cy="400" rx="280" ry="180" fill="none" stroke="url(#busRouteGradient)" stroke-width="15" stroke-dasharray="20,10"/>
+    
+    <!-- バス停（15箇所） -->
+    <g id="bus-stops" fill="#32CD32">
+      <rect x="1070" y="390" width="20" height="20" rx="5"/>
+      <rect x="1040" y="320" width="20" height="20" rx="5"/>
+      <rect x="980" y="250" width="20" height="20" rx="5"/>
+      <rect x="890" y="210" width="20" height="20" rx="5"/>
+      <rect x="800" y="190" width="20" height="20" rx="5"/>
+      <rect x="710" y="210" width="20" height="20" rx="5"/>
+      <rect x="620" y="250" width="20" height="20" rx="5"/>
+      <rect x="560" y="320" width="20" height="20" rx="5"/>
+      <rect x="530" y="390" width="20" height="20" rx="5"/>
+      <rect x="560" y="480" width="20" height="20" rx="5"/>
+      <rect x="620" y="550" width="20" height="20" rx="5"/>
+      <rect x="710" y="590" width="20" height="20" rx="5"/>
+      <rect x="800" y="610" width="20" height="20" rx="5"/>
+      <rect x="890" y="590" width="20" height="20" rx="5"/>
+      <rect x="980" y="550" width="20" height="20" rx="5"/>
+    </g>
+    
+    <!-- 自動運転バス（5台） -->
+    <g id="autonomous-buses">
+      <rect x="1050" y="380" width="40" height="20" fill="#00FF00" rx="10">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; -100,-50; -200,-100; -300,-50; -400,0; -300,50; -200,100; -100,50; 0,0" 
+          dur="30s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="1055" cy="385" r="3" fill="#2F4F4F"/>
+      <circle cx="1085" cy="385" r="3" fill="#2F4F4F"/>
+      <rect x="1060" y="375" width="20" height="8" fill="#87CEEB"/>
+      
+      <rect x="950" y="240" width="40" height="20" fill="#00FF00" rx="10">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; -50,25; -100,50; -150,75; -200,100; -150,125; -100,150; -50,125; 0,100" 
+          dur="25s" repeatCount="indefinite"/>
+      </rect>
+      
+      <rect x="590" y="240" width="40" height="20" fill="#00FF00" rx="10">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 50,25; 100,50; 150,75; 200,100; 150,125; 100,150; 50,125; 0,100" 
+          dur="35s" repeatCount="indefinite"/>
+      </rect>
+      
+      <rect x="590" y="540" width="40" height="20" fill="#00FF00" rx="10">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 50,-25; 100,-50; 150,-75; 200,-100; 150,-125; 100,-150; 50,-125; 0,-100" 
+          dur="28s" repeatCount="indefinite"/>
+      </rect>
+      
+      <rect x="950" y="540" width="40" height="20" fill="#00FF00" rx="10">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; -50,-25; -100,-50; -150,-75; -200,-100; -150,-125; -100,-150; -50,-125; 0,-100" 
+          dur="32s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <text x="800" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#32CD32">自動運転シャトルバス</text>
+    <text x="800" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">5台・15分間隔・Level4自動運転・無線充電</text>
+  </g>
+  
+  <!-- 歩行者・自転車専用道 -->
+  <g id="walking-cycling-paths">
+    <!-- 専用道路 -->
+    <path d="M 200,200 Q 400,150 600,200 Q 800,250 1000,200 Q 1200,150 1400,200" 
+          fill="none" stroke="url(#walkingPathGradient)" stroke-width="20" opacity="0.8"/>
+    <path d="M 200,600 Q 400,650 600,600 Q 800,550 1000,600 Q 1200,650 1400,600" 
+          fill="none" stroke="url(#walkingPathGradient)" stroke-width="20" opacity="0.8"/>
+    <path d="M 200,200 Q 150,400 200,600" 
+          fill="none" stroke="url(#walkingPathGradient)" stroke-width="20" opacity="0.8"/>
+    <path d="M 1400,200 Q 1450,400 1400,600" 
+          fill="none" stroke="url(#walkingPathGradient)" stroke-width="20" opacity="0.8"/>
+    
+    <!-- 歩行者 -->
+    <g id="pedestrians">
+      <circle cx="250" cy="195" r="8" fill="#4169E1">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 50,0; 100,0; 150,0; 200,0" dur="15s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="350" cy="605" r="8" fill="#4169E1">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 100,0; 200,0; 300,0; 400,0" dur="20s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <text x="300" y="180" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#228B22">歩行者・自転車専用道</text>
+    <text x="300" y="195" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">50km・完全分離・AI監視</text>
+  </g>
+  
+  <!-- 電動自転車シェア -->
+  <g id="bike-share">
+    <!-- シェアステーション（25箇所） -->
+    <g id="bike-stations" fill="#FF6347">
+      <rect x="300" y="250" width="15" height="15" rx="3"/>
+      <rect x="500" y="280" width="15" height="15" rx="3"/>
+      <rect x="700" y="250" width="15" height="15" rx="3"/>
+      <rect x="900" y="280" width="15" height="15" rx="3"/>
+      <rect x="1100" y="250" width="15" height="15" rx="3"/>
+      <rect x="300" y="450" width="15" height="15" rx="3"/>
+      <rect x="500" y="420" width="15" height="15" rx="3"/>
+      <rect x="700" y="450" width="15" height="15" rx="3"/>
+      <rect x="900" y="420" width="15" height="15" rx="3"/>
+      <rect x="1100" y="450" width="15" height="15" rx="3"/>
+      <rect x="300" y="550" width="15" height="15" rx="3"/>
+      <rect x="500" y="520" width="15" height="15" rx="3"/>
+      <rect x="700" y="550" width="15" height="15" rx="3"/>
+      <rect x="900" y="520" width="15" height="15" rx="3"/>
+      <rect x="1100" y="550" width="15" height="15" rx="3"/>
+    </g>
+    
+    <!-- 電動自転車 -->
+    <g id="e-bikes">
+      <circle cx="305" cy="257" r="4" fill="#FF1493">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; 200,30; 400,0; 600,30; 800,0" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="505" cy="427" r="4" fill="#FF1493">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; -200,-30; -400,0; -200,30; 0,0" dur="10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="905" cy="527" r="4" fill="#FF1493">
+        <animateTransform attributeName="transform" type="translate"
+          values="0,0; -100,-15; -200,-30; -300,-15; -400,0" dur="14s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <text x="500" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FF6347">電動自転車シェア</text>
+    <text x="500" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">50台・25ステーション・IoT管理・自動充電</text>
+  </g>
+  
+  <!-- スマート信号機・街灯 -->
+  <g id="smart-infrastructure">
+    <!-- スマート信号機（25箇所） -->
+    <g id="smart-signals">
+      <rect x="595" y="135" width="8" height="25" fill="#2F4F4F"/>
+      <circle cx="599" cy="140" r="3" fill="#FF0000"/>
+      <circle cx="599" cy="147" r="3" fill="#FFD700"/>
+      <circle cx="599" cy="154" r="3" fill="#00FF00"/>
+      <rect x="595" y="125" width="8" height="8" fill="#4169E1"/>
+      
+      <rect x="795" y="135" width="8" height="25" fill="#2F4F4F"/>
+      <circle cx="799" cy="140" r="3" fill="#FF0000"/>
+      <circle cx="799" cy="147" r="3" fill="#FFD700"/>
+      <circle cx="799" cy="154" r="3" fill="#00FF00"/>
+      <rect x="795" y="125" width="8" height="8" fill="#4169E1"/>
+      
+      <rect x="995" y="135" width="8" height="25" fill="#2F4F4F"/>
+      <circle cx="999" cy="140" r="3" fill="#FF0000"/>
+      <circle cx="999" cy="147" r="3" fill="#FFD700"/>
+      <circle cx="999" cy="154" r="3" fill="#00FF00"/>
+      <rect x="995" y="125" width="8" height="8" fill="#4169E1"/>
+      
+      <rect x="485" y="385" width="25" height="8" fill="#2F4F4F"/>
+      <circle cx="490" cy="389" r="3" fill="#FF0000"/>
+      <circle cx="497" cy="389" r="3" fill="#FFD700"/>
+      <circle cx="504" cy="389" r="3" fill="#00FF00"/>
+      <rect x="475" y="385" width="8" height="8" fill="#4169E1"/>
+      
+      <rect x="1085" y="385" width="25" height="8" fill="#2F4F4F"/>
+      <circle cx="1090" cy="389" r="3" fill="#FF0000"/>
+      <circle cx="1097" cy="389" r="3" fill="#FFD700"/>
+      <circle cx="1104" cy="389" r="3" fill="#00FF00"/>
+      <rect x="1115" y="385" width="8" height="8" fill="#4169E1"/>
+    </g>
+    
+    <!-- スマート街灯（200箇所から代表的なもの） -->
+    <g id="smart-streetlights" fill="#FFD700" opacity="0.8">
+      <line x1="250" y1="220" x2="250" y2="180" stroke="#2F4F4F" stroke-width="3"/>
+      <circle cx="250" cy="178" r="5"/>
+      <rect x="248" y="170" width="4" height="6" fill="#4169E1"/>
+      
+      <line x1="450" y1="300" x2="450" y2="260" stroke="#2F4F4F" stroke-width="3"/>
+      <circle cx="450" cy="258" r="5"/>
+      <rect x="448" y="250" width="4" height="6" fill="#4169E1"/>
+      
+      <line x1="650" y1="220" x2="650" y2="180" stroke="#2F4F4F" stroke-width="3"/>
+      <circle cx="650" cy="178" r="5"/>
+      <rect x="648" y="170" width="4" height="6" fill="#4169E1"/>
+      
+      <line x1="850" y1="300" x2="850" y2="260" stroke="#2F4F4F" stroke-width="3"/>
+      <circle cx="850" cy="258" r="5"/>
+      <rect x="848" y="250" width="4" height="6" fill="#4169E1"/>
+      
+      <line x1="1050" y1="220" x2="1050" y2="180" stroke="#2F4F4F" stroke-width="3"/>
+      <circle cx="1050" cy="178" r="5"/>
+      <rect x="1048" y="170" width="4" height="6" fill="#4169E1"/>
+      
+      <line x1="1250" y1="300" x2="1250" y2="260" stroke="#2F4F4F" stroke-width="3"/>
+      <circle cx="1250" cy="258" r="5"/>
+      <rect x="1248" y="250" width="4" height="6" fill="#4169E1"/>
+    </g>
+    
+    <text x="650" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4169E1">スマート信号・街灯システム</text>
+    <text x="650" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">325箇所・AI制御・4Kカメラ・LiDAR・5G基地局</text>
+  </g>
+  
+  <!-- 緊急車両専用レーン -->
+  <g id="emergency-lanes">
+    <rect x="780" y="120" width="40" height="20" fill="#FF0000" opacity="0.6"/>
+    <text x="800" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">緊急専用</text>
+    
+    <rect x="780" y="660" width="40" height="20" fill="#FF0000" opacity="0.6"/>
+    <text x="800" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">緊急専用</text>
+    
+    <!-- 救急車 -->
+    <rect x="785" y="125" width="30" height="15" fill="#FFFFFF" rx="3">
+      <animateTransform attributeName="transform" type="translate"
+        values="0,0; 100,0; 200,0; 300,0" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="792" y="128" width="16" height="8" fill="#FF0000"/>
+    <text x="800" y="134" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">救急</text>
+  </g>
+  
+  <!-- EV充電ステーション -->
+  <g id="ev-charging">
+    <rect x="200" y="400" width="20" height="30" fill="#00FFFF"/>
+    <rect x="205" y="405" width="10" height="20" fill="#4169E1"/>
+    <circle cx="210" cy="415" r="3" fill="#FFD700"/>
+    <text x="210" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">EV充電</text>
+    
+    <rect x="1200" y="400" width="20" height="30" fill="#00FFFF"/>
+    <rect x="1205" y="405" width="10" height="20" fill="#4169E1"/>
+    <circle cx="1210" cy="415" r="3" fill="#FFD700"/>
+    <text x="1210" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2F4F4F">EV充電</text>
+    
+    <text x="700" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00FFFF">EV充電ネットワーク</text>
+    <text x="700" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">350箇所・各世帯・公共施設・スマート充電</text>
+  </g>
+  
+  <!-- AI制御線（中央から各システムへ） -->
+  <g id="ai-control-lines">
+    <line x1="800" y1="400" x2="599" y2="150" stroke="#00FFFF" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+    <line x1="800" y1="400" x2="799" y2="150" stroke="#00FFFF" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+    <line x1="800" y1="400" x2="999" y2="150" stroke="#00FFFF" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+    <line x1="800" y1="400" x2="1080" y2="400" stroke="#00FFFF" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+    <line x1="800" y1="400" x2="500" y2="400" stroke="#00FFFF" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+    
+    <line x1="800" y1="400" x2="307" y2="257" stroke="#FF1493" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+    <line x1="800" y1="400" x2="507" y2="287" stroke="#FF1493" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+    <line x1="800" y1="400" x2="707" y2="257" stroke="#FF1493" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+    
+    <line x1="800" y1="400" x2="1070" y2="400" stroke="#32CD32" stroke-width="3" stroke-dasharray="10,5" opacity="0.8"/>
+    <line x1="800" y1="400" x2="960" y2="250" stroke="#32CD32" stroke-width="3" stroke-dasharray="10,5" opacity="0.8"/>
+    <line x1="800" y1="400" x2="630" y2="250" stroke="#32CD32" stroke-width="3" stroke-dasharray="10,5" opacity="0.8"/>
+  </g>
+  
+  <!-- 住宅エリア表示 -->
+  <g id="residential-areas">
+    <rect x="150" y="150" width="80" height="60" fill="#DEB887" opacity="0.5" rx="10"/>
+    <text x="190" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8B4513">住宅エリアA</text>
+    <text x="190" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">84世帯</text>
+    
+    <rect x="1350" y="150" width="80" height="60" fill="#DEB887" opacity="0.5" rx="10"/>
+    <text x="1390" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8B4513">住宅エリアB</text>
+    <text x="1390" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">84世帯</text>
+    
+    <rect x="150" y="650" width="80" height="60" fill="#DEB887" opacity="0.5" rx="10"/>
+    <text x="190" y="670" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8B4513">住宅エリアC</text>
+    <text x="190" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">84世帯</text>
+    
+    <rect x="1350" y="650" width="80" height="60" fill="#DEB887" opacity="0.5" rx="10"/>
+    <text x="1390" y="670" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8B4513">住宅エリアD</text>
+    <text x="1390" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">84世帯</text>
+  </g>
+  
+  <!-- 産業エリア -->
+  <g id="industrial-areas">
+    <rect x="680" y="650" width="60" height="40" fill="#32CD32" opacity="0.5" rx="5"/>
+    <text x="710" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#228B22">農業エリア</text>
+    <text x="710" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#228B22">200ha</text>
+    
+    <rect x="760" y="650" width="60" height="40" fill="#4682B4" opacity="0.5" rx="5"/>
+    <text x="790" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#191970">製造エリア</text>
+    <text x="790" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#191970">50ha</text>
+    
+    <rect x="840" y="650" width="60" height="40" fill="#9370DB" opacity="0.5" rx="5"/>
+    <text x="870" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#4B0082">IT・研究</text>
+    <text x="870" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#4B0082">30ha</text>
+  </g>
+  
+  <!-- 交通フロー矢印 -->
+  <g id="traffic-flow">
+    <path d="M 1080,400 Q 1100,350 1120,400" fill="none" stroke="#FF6347" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <path d="M 520,400 Q 500,450 480,400" fill="none" stroke="#FF6347" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <path d="M 800,200 Q 850,220 800,240" fill="none" stroke="#FF6347" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <path d="M 800,600 Q 750,580 800,560" fill="none" stroke="#FF6347" stroke-width="3" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- 統計・性能表示 -->
+  <g id="performance-stats">
+    <rect x="1200" y="750" width="380" height="400" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10"/>
+    <text x="1390" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4169E1">システム性能・効果</text>
+    
+    <!-- 技術仕様 -->
+    <text x="1220" y="810" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">■ 技術仕様</text>
+    <text x="1220" y="830" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• AI応答時間: <10ms</text>
+    <text x="1220" y="845" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 監視カバレッジ: 100%</text>
+    <text x="1220" y="860" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 自動運転レベル: Level 4</text>
+    <text x="1220" y="875" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• センサー総数: 1,000個</text>
+    
+    <!-- 車両・設備 -->
+    <text x="1220" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">■ 車両・設備</text>
+    <text x="1220" y="925" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 自動運転バス: 5台</text>
+    <text x="1220" y="940" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 電動自転車: 50台</text>
+    <text x="1220" y="955" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• スマート信号: 25箇所</text>
+    <text x="1220" y="970" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• スマート街灯: 200箇所</text>
+    <text x="1220" y="985" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• EV充電ステーション: 350箇所</text>
+    
+    <!-- 効果・メリット -->
+    <text x="1220" y="1015" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">■ 効果・メリット</text>
+    <text x="1220" y="1035" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 交通事故: 95%削減</text>
+    <text x="1220" y="1050" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 移動時間: 50%短縮</text>
+    <text x="1220" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 交通費: 80%削減</text>
+    <text x="1220" y="1080" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• CO2排出: 90%削減</text>
+    <text x="1220" y="1095" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 騒音: 80%削減</text>
+    
+    <!-- 投資・コスト -->
+    <text x="1220" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">■ 投資・運用コスト</text>
+    <text x="1220" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 初期投資: 15億円</text>
+    <text x="1220" y="1160" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 年間運用費: 8,000万円</text>
+    <text x="1220" y="1175" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 1人当たり年間: 8万円</text>
+  </g>
+  
+  <!-- システム連携図 -->
+  <g id="system-integration">
+    <rect x="20" y="750" width="500" height="400" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10"/>
+    <text x="270" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4169E1">AI統合制御システム連携</text>
+    
+    <!-- 中央AI -->
+    <rect x="220" y="800" width="100" height="60" fill="#4169E1" rx="10"/>
+    <text x="270" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">中央AI制御</text>
+    <text x="270" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">AITS</text>
+    <text x="270" y="850" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">Azure AI</text>
+    
+    <!-- 各サブシステム -->
+    <rect x="40" y="900" width="80" height="40" fill="#32CD32" rx="5"/>
+    <text x="80" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">バス制御</text>
+    <text x="80" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">運行管理</text>
+    
+    <rect x="140" y="900" width="80" height="40" fill="#FF6347" rx="5"/>
+    <text x="180" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">信号制御</text>
+    <text x="180" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">動的最適化</text>
+    
+    <rect x="240" y="900" width="80" height="40" fill="#FF1493" rx="5"/>
+    <text x="280" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">自転車管理</text>
+    <text x="280" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">配置最適化</text>
+    
+    <rect x="340" y="900" width="80" height="40" fill="#9370DB" rx="5"/>
+    <text x="380" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">監視システム</text>
+    <text x="380" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">異常検知</text>
+    
+    <rect x="440" y="900" width="80" height="40" fill="#00FFFF" rx="5"/>
+    <text x="480" y="915" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">充電管理</text>
+    <text x="480" y="930" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">負荷分散</text>
+    
+    <!-- 連携線 -->
+    <line x1="270" y1="860" x2="80" y2="900" stroke="#4169E1" stroke-width="2"/>
+    <line x1="270" y1="860" x2="180" y2="900" stroke="#4169E1" stroke-width="2"/>
+    <line x1="270" y1="860" x2="280" y2="900" stroke="#4169E1" stroke-width="2"/>
+    <line x1="270" y1="860" x2="380" y2="900" stroke="#4169E1" stroke-width="2"/>
+    <line x1="270" y1="860" x2="480" y2="900" stroke="#4169E1" stroke-width="2"/>
+    
+    <!-- データフロー -->
+    <text x="270" y="980" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">リアルタイムデータフロー</text>
+    <text x="50" y="1000" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 交通流データ</text>
+    <text x="50" y="1015" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 位置情報</text>
+    <text x="50" y="1030" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 環境データ</text>
+    <text x="50" y="1045" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 異常検知</text>
+    
+    <text x="300" y="1000" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 制御コマンド</text>
+    <text x="300" y="1015" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 最適化指示</text>
+    <text x="300" y="1030" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 予測情報</text>
+    <text x="300" y="1045" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 緊急対応</text>
+    
+    <!-- 外部システム連携 -->
+    <text x="270" y="1080" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">外部システム連携</text>
+    <text x="50" y="1100" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 気象情報システム</text>
+    <text x="50" y="1115" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 緊急車両システム</text>
+    <text x="300" y="1100" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• 住民アプリ「CityMove」</text>
+    <text x="300" y="1115" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">• エネルギー管理システム</text>
+  </g>
+  
+  <!-- フッター情報 -->
+  <text x="800" y="1180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4169E1">完全自動交通システム - Well-Being Pioneer City 2040</text>
+  
+</svg>
