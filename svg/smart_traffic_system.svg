@@ -22,10 +22,6 @@
       <stop offset="100%" style="stop-color:#90EE90;stop-opacity:0.6" />
     </linearGradient>
     
-    <!-- アニメーション定義 -->
-    <animateTransform id="busMove" attributeName="transform" type="translate"
-      values="0,0; 100,0; 100,100; 0,100; 0,0" dur="20s" repeatCount="indefinite"/>
-      
     <!-- マーカー定義 -->
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#FF6347"/>
@@ -53,7 +49,7 @@
     <text x="800" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4169E1">AI統合交通管制センター</text>
     <text x="800" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2F4F4F">AITS (AI Integrated Traffic System)</text>
     <text x="800" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4169E1">中央制御AI</text>
-    <text x="800" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">リアルタイム制御 <10ms</text>
+    <text x="800" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2F4F4F">リアルタイム制御 &lt;10ms</text>
   </g>
   
   <!-- 主要道路ネットワーク -->
@@ -99,38 +95,26 @@
     
     <!-- 自動運転バス（5台） -->
     <g id="autonomous-buses">
-      <rect x="1050" y="380" width="40" height="20" fill="#00FF00" rx="10">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; -100,-50; -200,-100; -300,-50; -400,0; -300,50; -200,100; -100,50; 0,0" 
-          dur="30s" repeatCount="indefinite"/>
-      </rect>
+      <rect x="1050" y="380" width="40" height="20" fill="#00FF00" rx="10"/>
       <circle cx="1055" cy="385" r="3" fill="#2F4F4F"/>
       <circle cx="1085" cy="385" r="3" fill="#2F4F4F"/>
       <rect x="1060" y="375" width="20" height="8" fill="#87CEEB"/>
       
-      <rect x="950" y="240" width="40" height="20" fill="#00FF00" rx="10">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; -50,25; -100,50; -150,75; -200,100; -150,125; -100,150; -50,125; 0,100" 
-          dur="25s" repeatCount="indefinite"/>
-      </rect>
+      <rect x="950" y="240" width="40" height="20" fill="#00FF00" rx="10"/>
+      <circle cx="955" cy="245" r="3" fill="#2F4F4F"/>
+      <circle cx="985" cy="245" r="3" fill="#2F4F4F"/>
       
-      <rect x="590" y="240" width="40" height="20" fill="#00FF00" rx="10">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; 50,25; 100,50; 150,75; 200,100; 150,125; 100,150; 50,125; 0,100" 
-          dur="35s" repeatCount="indefinite"/>
-      </rect>
+      <rect x="590" y="240" width="40" height="20" fill="#00FF00" rx="10"/>
+      <circle cx="595" cy="245" r="3" fill="#2F4F4F"/>
+      <circle cx="625" cy="245" r="3" fill="#2F4F4F"/>
       
-      <rect x="590" y="540" width="40" height="20" fill="#00FF00" rx="10">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; 50,-25; 100,-50; 150,-75; 200,-100; 150,-125; 100,-150; 50,-125; 0,-100" 
-          dur="28s" repeatCount="indefinite"/>
-      </rect>
+      <rect x="590" y="540" width="40" height="20" fill="#00FF00" rx="10"/>
+      <circle cx="595" cy="545" r="3" fill="#2F4F4F"/>
+      <circle cx="625" cy="545" r="3" fill="#2F4F4F"/>
       
-      <rect x="950" y="540" width="40" height="20" fill="#00FF00" rx="10">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; -50,-25; -100,-50; -150,-75; -200,-100; -150,-125; -100,-150; -50,-125; 0,-100" 
-          dur="32s" repeatCount="indefinite"/>
-      </rect>
+      <rect x="950" y="540" width="40" height="20" fill="#00FF00" rx="10"/>
+      <circle cx="955" cy="545" r="3" fill="#2F4F4F"/>
+      <circle cx="985" cy="545" r="3" fill="#2F4F4F"/>
     </g>
     
     <text x="800" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#32CD32">自動運転シャトルバス</text>
@@ -151,14 +135,8 @@
     
     <!-- 歩行者 -->
     <g id="pedestrians">
-      <circle cx="250" cy="195" r="8" fill="#4169E1">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; 50,0; 100,0; 150,0; 200,0" dur="15s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="350" cy="605" r="8" fill="#4169E1">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; 100,0; 200,0; 300,0; 400,0" dur="20s" repeatCount="indefinite"/>
-      </circle>
+      <circle cx="250" cy="195" r="8" fill="#4169E1"/>
+      <circle cx="350" cy="605" r="8" fill="#4169E1"/>
     </g>
     
     <text x="300" y="180" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#228B22">歩行者・自転車専用道</text>
@@ -188,18 +166,9 @@
     
     <!-- 電動自転車 -->
     <g id="e-bikes">
-      <circle cx="305" cy="257" r="4" fill="#FF1493">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; 200,30; 400,0; 600,30; 800,0" dur="12s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="505" cy="427" r="4" fill="#FF1493">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; -200,-30; -400,0; -200,30; 0,0" dur="10s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="905" cy="527" r="4" fill="#FF1493">
-        <animateTransform attributeName="transform" type="translate"
-          values="0,0; -100,-15; -200,-30; -300,-15; -400,0" dur="14s" repeatCount="indefinite"/>
-      </circle>
+      <circle cx="305" cy="257" r="4" fill="#FF1493"/>
+      <circle cx="505" cy="427" r="4" fill="#FF1493"/>
+      <circle cx="905" cy="527" r="4" fill="#FF1493"/>
     </g>
     
     <text x="500" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FF6347">電動自転車シェア</text>
@@ -241,7 +210,7 @@
       <rect x="1115" y="385" width="8" height="8" fill="#4169E1"/>
     </g>
     
-    <!-- スマート街灯（200箇所から代表的なもの） -->
+    <!-- スマート街灯 -->
     <g id="smart-streetlights" fill="#FFD700" opacity="0.8">
       <line x1="250" y1="220" x2="250" y2="180" stroke="#2F4F4F" stroke-width="3"/>
       <circle cx="250" cy="178" r="5"/>
@@ -281,10 +250,7 @@
     <text x="800" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">緊急専用</text>
     
     <!-- 救急車 -->
-    <rect x="785" y="125" width="30" height="15" fill="#FFFFFF" rx="3">
-      <animateTransform attributeName="transform" type="translate"
-        values="0,0; 100,0; 200,0; 300,0" dur="8s" repeatCount="indefinite"/>
-    </rect>
+    <rect x="785" y="125" width="30" height="15" fill="#FFFFFF" rx="3"/>
     <rect x="792" y="128" width="16" height="8" fill="#FF0000"/>
     <text x="800" y="134" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">救急</text>
   </g>
@@ -371,7 +337,7 @@
     
     <!-- 技術仕様 -->
     <text x="1220" y="810" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">■ 技術仕様</text>
-    <text x="1220" y="830" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• AI応答時間: <10ms</text>
+    <text x="1220" y="830" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• AI応答時間: &lt;10ms</text>
     <text x="1220" y="845" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 監視カバレッジ: 100%</text>
     <text x="1220" y="860" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 自動運転レベル: Level 4</text>
     <text x="1220" y="875" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• センサー総数: 1,000個</text>
@@ -395,11 +361,9 @@
     <!-- 投資・コスト -->
     <text x="1220" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">■ 投資・運用コスト</text>
     <text x="1220" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 初期投資: 15億円</text>
-    <text x="1220" y="1160" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 年間運用費: 8,000万円</text>
-    <text x="1220" y="1175" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">• 1人当たり年間: 8万円</text>
   </g>
   
-  <!-- システム連携図 -->
+  <!-- システム統合・運用 -->
   <g id="system-integration">
     <rect x="20" y="750" width="500" height="400" fill="rgba(255,255,255,0.95)" stroke="#4169E1" stroke-width="2" rx="10"/>
     <text x="270" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4169E1">AI統合制御システム連携</text>
