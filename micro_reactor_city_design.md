@@ -138,8 +138,9 @@
 - **IoTセンサー**: 環境・設備・交通監視
 - **AI管理システム**: エネルギー・交通・防犯統合管理
 
+![ロゴ](./svg/simple_integration_architecture.svg)
 
-
+[市都市を支えるSaaS](./doc/simple_integration_architecture.md)  
 
 ### 5.3 交通システム
 ```
