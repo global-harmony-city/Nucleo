@@ -1,0 +1,157 @@
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- グラデーション定義 -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="silverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A8A8A8;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4169E1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0047AB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#002FA7;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="moonGlow" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#E0E0E0;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#C0C0C0;stop-opacity:0.1" />
+    </radialGradient>
+    
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1419;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- ラベル背景 -->
+  <rect width="400" height="600" fill="url(#backgroundGradient)" rx="20" ry="20"/>
+  
+  <!-- 装飾的な境界線 -->
+  <rect x="10" y="10" width="380" height="580" fill="none" stroke="url(#goldGradient)" stroke-width="3" rx="15" ry="15"/>
+  <rect x="20" y="20" width="360" height="560" fill="none" stroke="url(#silverGradient)" stroke-width="1" rx="10" ry="10"/>
+  
+  <!-- 月のイメージ（上部） -->
+  <circle cx="200" cy="80" r="35" fill="url(#moonGlow)" opacity="0.9"/>
+  <circle cx="200" cy="80" r="30" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6"/>
+  
+  <!-- 未来的な線（AI・テクノロジーを表現） -->
+  <path d="M 50 120 Q 200 100 350 120" fill="none" stroke="url(#blueGradient)" stroke-width="2" opacity="0.7"/>
+  <path d="M 60 125 Q 200 105 340 125" fill="none" stroke="#00BFFF" stroke-width="1" opacity="0.5"/>
+  
+  <!-- メインブランド名 -->
+  <text x="200" y="160" text-anchor="middle" font-family="serif" font-size="32" font-weight="bold" fill="url(#goldGradient)">MIRAI</text>
+  <text x="200" y="195" text-anchor="middle" font-family="serif" font-size="28" font-weight="bold" fill="url(#goldGradient)">SAKE</text>
+  
+  <!-- 年号 -->
+  <text x="200" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="url(#silverGradient)">2040</text>
+  
+  <!-- 日本語ブランド名 -->
+  <text x="200" y="265" text-anchor="middle" font-family="serif" font-size="18" fill="#FFFFFF">未来酒</text>
+  
+  <!-- 装飾線 -->
+  <line x1="80" y1="280" x2="320" y2="280" stroke="url(#goldGradient)" stroke-width="2"/>
+  <line x1="90" y1="285" x2="310" y2="285" stroke="url(#silverGradient)" stroke-width="1"/>
+  
+  <!-- 製品タイプ -->
+  <text x="200" y="310" text-anchor="middle" font-family="serif" font-size="16" font-weight="bold" fill="#FFFFFF">純米大吟醸</text>
+  <text x="200" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="url(#silverGradient)">JUNMAI DAIGINJO</text>
+  
+  <!-- 特徴・キャッチフレーズ -->
+  <text x="200" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#87CEEB">AI-CRAFTED PREMIUM SAKE</text>
+  <text x="200" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#87CEEB">世界初 AI制御醸造</text>
+  
+  <!-- 未来都市のシンボル（簡略化した建物シルエット） -->
+  <g transform="translate(150, 390)">
+    <!-- 近未来建物シルエット -->
+    <rect x="0" y="20" width="8" height="25" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="12" y="15" width="6" height="30" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="22" y="18" width="10" height="27" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="36" y="12" width="8" height="33" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="48" y="20" width="6" height="25" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="58" y="16" width="12" height="29" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="74" y="14" width="7" height="31" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="85" y="19" width="9" height="26" fill="url(#blueGradient)" opacity="0.6"/>
+    <rect x="98" y="17" width="5" height="28" fill="url(#blueGradient)" opacity="0.6"/>
+    
+    <!-- エネルギーの光 -->
+    <circle cx="50" cy="8" r="4" fill="#00FFFF" opacity="0.8"/>
+    <circle cx="50" cy="8" r="2" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- 装飾的なライン -->
+  <path d="M 70 420 Q 200 405 330 420" fill="none" stroke="url(#goldGradient)" stroke-width="1" opacity="0.6"/>
+  
+  <!-- 製品情報 -->
+  <text x="200" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">PREMIUM QUALITY</text>
+  
+  <!-- 技術仕様 -->
+  <g font-family="Arial, sans-serif" font-size="9" fill="url(#silverGradient)">
+    <text x="60" y="480">精米歩合：35%</text>
+    <text x="240" y="480">Rice Polishing: 35%</text>
+    
+    <text x="60" y="495">アルコール分：16度</text>
+    <text x="240" y="495">Alcohol: 16%</text>
+    
+    <text x="60" y="510">原料米：食料用米（AI変換）</text>
+    <text x="240" y="510">AI-Enhanced Rice</text>
+    
+    <text x="60" y="525">製造方法：AI制御醸造</text>
+    <text x="240" y="525">AI-Controlled Brewing</text>
+  </g>
+  
+  <!-- 品質認証マーク -->
+  <g transform="translate(50, 540)">
+    <circle cx="15" cy="15" r="12" fill="none" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="15" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="url(#goldGradient)">ORGANIC</text>
+    <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="url(#goldGradient)">JAS</text>
+  </g>
+  
+  <g transform="translate(320, 540)">
+    <circle cx="15" cy="15" r="12" fill="none" stroke="#00BFFF" stroke-width="2"/>
+    <text x="15" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#00BFFF">AI</text>
+    <text x="15" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#00BFFF">CRAFT</text>
+  </g>
+  
+  <!-- 容量・製造者情報 -->
+  <text x="200" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">720ml</text>
+  
+  <!-- 製造者情報 -->
+  <g font-family="Arial, sans-serif" font-size="8" fill="url(#silverGradient)">
+    <text x="200" y="565" text-anchor="middle">マイクロ炉自給自足型モデル都市</text>
+    <text x="200" y="575" text-anchor="middle">MIRAI SAKE BREWERY</text>
+  </g>
+  
+  <!-- QRコード風装飾（トレーサビリティ） -->
+  <g transform="translate(320, 450)">
+    <rect x="0" y="0" width="50" height="50" fill="#FFFFFF" opacity="0.1"/>
+    <rect x="5" y="5" width="40" height="40" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+    <text x="25" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#FFFFFF">QR</text>
+    <text x="25" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#FFFFFF">TRACE</text>
+    <text x="25" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#FFFFFF">ABILITY</text>
+  </g>
+  
+  <!-- シリアルナンバー風 -->
+  <text x="60" y="470" font-family="Arial, sans-serif" font-size="7" fill="url(#goldGradient)" opacity="0.7">No. 2040-AI-001</text>
+  
+  <!-- 背景装飾パターン -->
+  <g opacity="0.1">
+    <circle cx="80" cy="150" r="2" fill="#FFFFFF"/>
+    <circle cx="320" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="100" cy="350" r="1.5" fill="#00BFFF"/>
+    <circle cx="300" cy="380" r="1.5" fill="#00BFFF"/>
+    <circle cx="150" cy="500" r="1" fill="#FFD700"/>
+    <circle cx="250" cy="520" r="1" fill="#FFD700"/>
+  </g>
+  
+  <!-- 最下部装飾ライン -->
+  <rect x="30" y="585" width="340" height="2" fill="url(#goldGradient)" opacity="0.6"/>
+</svg>
