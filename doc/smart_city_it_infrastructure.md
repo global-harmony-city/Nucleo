@@ -20,6 +20,8 @@
 
 ## 2. 認証・認可基盤層（Identity & Access Management）
 
+![認証・認可イメージ](../svg/azure_auth_simple_svg.svg)
+
 ### 2.1 統合認証システム
 - **シングルサインオン（SSO）**: 全システム共通ログイン
 - **多要素認証（MFA）**: セキュリティレベル別認証
@@ -31,6 +33,8 @@
 - **属性ベースアクセス制御（ABAC）**: 状況・条件別権限制御
 - **動的権限管理**: 緊急時・特別業務での権限変更
 - **監査ログ**: アクセス履歴の完全記録
+
+[データ基盤](./azure_auth_platform_design.md)
 
 ## 3. 通信・ネットワーク基盤層（Communication Infrastructure）
 
