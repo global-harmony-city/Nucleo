@@ -1,0 +1,389 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- グラデーション定義 -->
+    <linearGradient id="azureGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078D4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#106EBE;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="saasGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCF2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0078D4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7931E;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.1" />
+    </radialGradient>
+    
+    <!-- 矢印マーカー -->
+    <marker id="arrowBlue" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0078D4"/>
+    </marker>
+    
+    <marker id="arrowOrange" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#FF6B35"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1400" height="900" fill="#F8F9FA"/>
+  
+  <!-- タイトル -->
+  <rect x="20" y="20" width="600" height="80" fill="rgba(255,255,255,0.95)" stroke="#0078D4" stroke-width="2" rx="10"/>
+  <text x="320" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2F4F4F">マイクロ炉自給自足型モデル都市</text>
+  <text x="320" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0078D4">シンプル統合アーキテクチャ</text>
+  <text x="320" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">月額75万円で永続可能なWell-Being都市</text>
+  
+  <!-- Azure 基盤層（下部） -->
+  <g id="azure-foundation">
+    <rect x="50" y="600" width="1300" height="250" fill="url(#azureGradient)" opacity="0.1" stroke="#0078D4" stroke-width="3" rx="15"/>
+    <text x="700" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0078D4">Azure 統合基盤（既存活用）</text>
+    
+    <!-- データ基盤 -->
+    <rect x="80" y="650" width="250" height="180" fill="url(#azureGradient)" opacity="0.8" rx="10"/>
+    <text x="205" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">データ基盤層</text>
+    
+    <rect x="90" y="690" width="230" height="30" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="205" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Data Lake Storage Gen2</text>
+    
+    <rect x="90" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="145" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">SQL Database</text>
+    
+    <rect x="210" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="265" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Stream Analytics</text>
+    
+    <rect x="90" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="145" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Power BI</text>
+    
+    <rect x="210" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="265" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Data Factory</text>
+    
+    <text x="205" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">月額 8.7万円</text>
+    
+    <!-- 認証基盤 -->
+    <rect x="360" y="650" width="250" height="180" fill="url(#azureGradient)" opacity="0.8" rx="10"/>
+    <text x="485" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">認証・認可基盤層</text>
+    
+    <rect x="370" y="690" width="230" height="30" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="485" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Azure AD + B2C統合認証</text>
+    
+    <rect x="370" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="425" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">RBAC権限管理</text>
+    
+    <rect x="490" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="545" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">MFA・条件付き</text>
+    
+    <rect x="370" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="425" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">API Management</text>
+    
+    <rect x="490" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="545" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">監査ログ</text>
+    
+    <text x="485" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">月額 3.1万円</text>
+    
+    <!-- ネットワーク基盤 -->
+    <rect x="640" y="650" width="250" height="180" fill="url(#azureGradient)" opacity="0.8" rx="10"/>
+    <text x="765" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">通信・ネットワーク基盤層</text>
+    
+    <rect x="650" y="690" width="230" height="30" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="765" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">5G/光回線 + VPN Gateway</text>
+    
+    <rect x="650" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="705" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Azure Firewall</text>
+    
+    <rect x="770" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="825" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Load Balancer</text>
+    
+    <rect x="650" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="705" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">CDN</text>
+    
+    <rect x="770" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="825" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">WiFi基盤</text>
+    
+    <text x="765" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">月額 25.5万円</text>
+    
+    <!-- Azure AI基盤 -->
+    <rect x="920" y="650" width="250" height="180" fill="url(#aiGradient)" opacity="0.8" rx="10"/>
+    <text x="1045" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Azure AI基盤（内製）</text>
+    
+    <rect x="930" y="690" width="230" height="30" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="1045" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Machine Learning Studio</text>
+    
+    <rect x="930" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="985" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Cognitive Services</text>
+    
+    <rect x="1050" y="730" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="1105" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Bot Service</text>
+    
+    <rect x="930" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="985" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Health Bot</text>
+    
+    <rect x="1050" y="765" width="110" height="25" fill="rgba(255,255,255,0.2)" rx="5"/>
+    <text x="1105" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Digital Twins</text>
+    
+    <text x="1045" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">月額 1.5万円</text>
+    
+    <!-- 基盤合計 -->
+    <rect x="1220" y="650" width="100" height="180" fill="rgba(255,255,255,0.9)" stroke="#0078D4" stroke-width="2" rx="10"/>
+    <text x="1270" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0078D4">基盤合計</text>
+    <text x="1270" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FF6B35">月額</text>
+    <text x="1270" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF6B35">38.8万円</text>
+    <text x="1270" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">データ基盤活用で</text>
+    <text x="1270" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">大幅コスト削減</text>
+  </g>
+  
+  <!-- コアSaaS層（中央） -->
+  <g id="core-saas">
+    <rect x="150" y="300" width="1100" height="280" fill="url(#saasGradient)" opacity="0.1" stroke="#00BCF2" stroke-width="3" rx="15"/>
+    <text x="700" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#00BCF2">コア統合SaaS（4つのみ）</text>
+    
+    <!-- Microsoft 365 -->
+    <rect x="200" y="350" width="220" height="120" fill="#FF6B35" opacity="0.9" rx="10"/>
+    <text x="310" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Microsoft 365</text>
+    <text x="310" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Government</text>
+    
+    <text x="220" y="410" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 住民ポータル（SharePoint）</text>
+    <text x="220" y="425" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 行政運営（Teams・Exchange）</text>
+    <text x="220" y="440" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 教育プラットフォーム</text>
+    <text x="220" y="455" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 住民SNS（Yammer）</text>
+    
+    <text x="310" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">月額 30万円</text>
+    
+    <!-- Dynamics 365 -->
+    <rect x="450" y="350" width="220" height="120" fill="#00BCF2" opacity="0.9" rx="10"/>
+    <text x="560" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Dynamics 365</text>
+    <text x="560" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Government</text>
+    
+    <text x="470" y="410" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 住民360度管理</text>
+    <text x="470" y="425" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 行政サービス・申請処理</text>
+    <text x="470" y="440" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 事業者管理（420社）</text>
+    <text x="470" y="455" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 財政・予算管理</text>
+    
+    <text x="560" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">月額 20万円</text>
+    
+    <!-- Azure IoT Central -->
+    <rect x="700" y="350" width="220" height="120" fill="#0078D4" opacity="0.9" rx="10"/>
+    <text x="810" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Azure IoT Central</text>
+    
+    <text x="720" y="400" font-family="Arial, sans-serif" font-size="10" fill="white">✓ マイクロ炉・エネルギー監視</text>
+    <text x="720" y="415" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 農業センサー統合</text>
+    <text x="720" y="430" font-family="Arial, sans-serif" font-size="10" fill="white">✓ インフラ監視・予防保全</text>
+    <text x="720" y="445" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 環境データ収集</text>
+    
+    <text x="810" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">月額 8万円</text>
+    
+    <!-- GitHub Enterprise -->
+    <rect x="950" y="350" width="220" height="120" fill="#333333" opacity="0.9" rx="10"/>
+    <text x="1060" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">GitHub Enterprise</text>
+    
+    <text x="970" y="400" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 内製AI・アプリ開発</text>
+    <text x="970" y="415" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 政策バージョン管理</text>
+    <text x="970" y="430" font-family="Arial, sans-serif" font-size="10" fill="white">✓ オープンソース政策</text>
+    <text x="970" y="445" font-family="Arial, sans-serif" font-size="10" fill="white">✓ 他都市への技術移転</text>
+    
+    <text x="1060" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">月額 2万円</text>
+    
+    <!-- SaaS合計 -->
+    <rect x="200" y="500" width="970" height="60" fill="rgba(255,255,255,0.9)" stroke="#00BCF2" stroke-width="2" rx="10"/>
+    <text x="685" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#00BCF2">SaaS合計：月額 60万円</text>
+    <text x="685" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">4つのSaaSで全行政機能をカバー</text>
+  </g>
+  
+  <!-- 住民サービス層（上部） -->
+  <g id="citizen-services">
+    <rect x="50" y="120" width="1300" height="160" fill="rgba(72, 187, 120, 0.1)" stroke="#48BB78" stroke-width="3" rx="15"/>
+    <text x="700" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#48BB78">住民サービス・Well-Being実現</text>
+    
+    <!-- 住民向けサービス -->
+    <rect x="100" y="170" width="180" height="90" fill="#48BB78" opacity="0.8" rx="8"/>
+    <text x="190" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">住民サービス</text>
+    <text x="110" y="210" font-family="Arial, sans-serif" font-size="9" fill="white">✓ ワンストップ申請</text>
+    <text x="110" y="225" font-family="Arial, sans-serif" font-size="9" fill="white">✓ AI健康相談24h</text>
+    <text x="110" y="240" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 多言語対応</text>
+    <text x="110" y="255" font-family="Arial, sans-serif" font-size="9" fill="white">✓ モバイル最適化</text>
+    
+    <!-- 教育・学習 -->
+    <rect x="300" y="170" width="180" height="90" fill="#38A169" opacity="0.8" rx="8"/>
+    <text x="390" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">教育・生涯学習</text>
+    <text x="310" y="210" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 個別最適化学習</text>
+    <text x="310" y="225" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 国際交流・遠隔教育</text>
+    <text x="310" y="240" font-family="Arial, sans-serif" font-size="9" fill="white">✓ AI学習支援</text>
+    <text x="310" y="255" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 生涯学習プログラム</text>
+    
+    <!-- 健康・医療 -->
+    <rect x="500" y="170" width="180" height="90" fill="#2F855A" opacity="0.8" rx="8"/>
+    <text x="590" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">健康・医療</text>
+    <text x="510" y="210" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 予防医療AI</text>
+    <text x="510" y="225" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 健康データ統合</text>
+    <text x="510" y="240" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 遠隔医療対応</text>
+    <text x="510" y="255" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 緊急時自動通報</text>
+    
+    <!-- コミュニティ -->
+    <rect x="700" y="170" width="180" height="90" fill="#68D391" opacity="0.8" rx="8"/>
+    <text x="790" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">コミュニティ</text>
+    <text x="710" y="210" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 住民SNS・交流</text>
+    <text x="710" y="225" font-family="Arial, sans-serif" font-size="9" fill="white">✓ イベント企画支援</text>
+    <text x="710" y="240" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 相互扶助マッチング</text>
+    <text x="710" y="255" font-family="Arial, sans-serif" font-size="9" fill="white">✓ ボランティア調整</text>
+    
+    <!-- 産業・経済 -->
+    <rect x="900" y="170" width="180" height="90" fill="#9AE6B4" opacity="0.8" rx="8"/>
+    <text x="990" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">産業・経済</text>
+    <text x="910" y="210" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 農業IoT最適化</text>
+    <text x="910" y="225" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 製造業効率化</text>
+    <text x="910" y="240" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 地域通貨連携</text>
+    <text x="910" y="255" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 事業支援AI</text>
+    
+    <!-- 環境・エネルギー -->
+    <rect x="1100" y="170" width="180" height="90" fill="#C6F6D5" opacity="0.8" rx="8"/>
+    <text x="1190" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">環境・エネルギー</text>
+    <text x="1110" y="210" font-family="Arial, sans-serif" font-size="9" fill="white">✓ マイクロ炉最適制御</text>
+    <text x="1110" y="225" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 再エネ統合管理</text>
+    <text x="1110" y="240" font-family="Arial, sans-serif" font-size="9" fill="white">✓ カーボンニュートラル</text>
+    <text x="1110" y="255" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 環境データ公開</text>
+  </g>
+  
+  <!-- 連携矢印 -->
+  <g id="integration-arrows">
+    <!-- SaaSから基盤への連携 -->
+    <line x1="310" y1="470" x2="205" y2="650" stroke="#0078D4" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="560" y1="470" x2="485" y2="650" stroke="#0078D4" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="810" y1="470" x2="765" y2="650" stroke="#0078D4" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="1060" y1="470" x2="1045" y2="650" stroke="#FF6B35" stroke-width="3" marker-end="url(#arrowOrange)"/>
+    
+    <!-- 基盤からサービスへの連携 -->
+    <line x1="190" y1="260" x2="190" y2="170" stroke="#48BB78" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="390" y1="260" x2="390" y2="170" stroke="#48BB78" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="590" y1="260" x2="590" y2="170" stroke="#48BB78" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="790" y1="260" x2="790" y2="170" stroke="#48BB78" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="990" y1="260" x2="990" y2="170" stroke="#48BB78" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    <line x1="1190" y1="260" x2="1190" y2="170" stroke="#48BB78" stroke-width="3" marker-end="url(#arrowBlue)"/>
+    
+    <!-- 横の統合連携 -->
+    <line x1="420" y1="410" x2="450" y2="410" stroke="#FFD700" stroke-width="2"/>
+    <line x1="670" y1="410" x2="700" y2="410" stroke="#FFD700" stroke-width="2"/>
+    <line x1="920" y1="410" x2="950" y2="410" stroke="#FFD700" stroke-width="2"/>
+  </g>
+  
+  <!-- 成果・ROI表示 -->
+  <g id="roi-results">
+    <rect x="1050" y="30" width="320" height="250" fill="rgba(255,255,255,0.95)" stroke="#48BB78" stroke-width="2" rx="10"/>
+    <text x="1210" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#48BB78">永続可能な財政モデル</text>
+    
+    <!-- 月額コスト -->
+    <rect x="1070" y="70" width="280" height="40" fill="#FF6B35" opacity="0.1" rx="5"/>
+    <text x="1210" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FF6B35">月額総コスト</text>
+    <text x="1210" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF6B35">75万円</text>
+    
+    <!-- 内訳 -->
+    <text x="1080" y="130" font-family="Arial, sans-serif" font-size="10" fill="#666">SaaS: 60万円 + 基盤: 15万円</text>
+    <text x="1080" y="145" font-family="Arial, sans-serif" font-size="10" fill="#666">（基盤38.8万円から23.8万円削減）</text>
+    
+    <!-- 収益モデル -->
+    <rect x="1070" y="160" width="280" height="60" fill="#48BB78" opacity="0.1" rx="5"/>
+    <text x="1210" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#48BB78">3年目収益モデル</text>
+    <text x="1080" y="190" font-family="Arial, sans-serif" font-size="9" fill="#2F855A">技術ライセンス: 月100万円</text>
+    <text x="1080" y="203" font-family="Arial, sans-serif" font-size="9" fill="#2F855A">視察・研修: 月50万円</text>
+    <text x="1080" y="216" font-family="Arial, sans-serif" font-size="9" fill="#2F855A">コスト削減効果: 月150万円</text>
+    
+    <!-- ROI -->
+    <rect x="1070" y="230" width="280" height="40" fill="#FFD700" opacity="0.2" rx="5"/>
+    <text x="1210" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#B8860B">純利益</text>
+    <text x="1210" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#B8860B">月225万円</text>
+  </g>
+  
+  <!-- Well-Being指標 -->
+  <g id="wellbeing-kpi">
+    <rect x="700" y="30" width="320" height="250" fill="rgba(255,255,255,0.95)" stroke="#0078D4" stroke-width="2" rx="10"/>
+    <text x="860" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0078D4">Well-Being目標指標</text>
+    
+    <rect x="720" y="70" width="280" height="25" fill="#48BB78" opacity="0.1" rx="3"/>
+    <text x="730" y="85" font-family="Arial, sans-serif" font-size="11" fill="#2F855A">✓ 住民満足度: 95%以上</text>
+    
+    <rect x="720" y="100" width="280" height="25" fill="#0078D4" opacity="0.1" rx="3"/>
+    <text x="730" y="115" font-family="Arial, sans-serif" font-size="11" fill="#0078D4">✓ 健康寿命: 全国平均+3歳</text>
+    
+    <rect x="720" y="130" width="280" height="25" fill="#FF6B35" opacity="0.1" rx="3"/>
+    <text x="730" y="145" font-family="Arial, sans-serif" font-size="11" fill="#FF6B35">✓ デジタル活用率: 90%</text>
+    
+    <rect x="720" y="160" width="280" height="25" fill="#38A169" opacity="0.1" rx="3"/>
+    <text x="730" y="175" font-family="Arial, sans-serif" font-size="11" fill="#2F855A">✓ エネルギー自給率: 100%</text>
+    
+    <rect x="720" y="190" width="280" height="25" fill="#9AE6B4" opacity="0.1" rx="3"/>
+    <text x="730" y="205" font-family="Arial, sans-serif" font-size="11" fill="#2F855A">✓ 食料自給率: 95%</text>
+    
+    <rect x="720" y="220" width="280" height="25" fill="#FFD700" opacity="0.2" rx="3"/>
+    <text x="730" y="235" font-family="Arial, sans-serif" font-size="11" fill="#B8860B">✓ 住民1人当たりIT費用: 27,000円/年</text>
+    
+    <text x="860" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">（一般自治体の50%以下）</text>
+  </g>
+  
+  <!-- シンプル運用チーム -->
+  <g id="simple-team">
+    <rect x="320" y="30" width="350" height="220" fill="rgba(255,255,255,0.95)" stroke="#333" stroke-width="2" rx="10"/>
+    <text x="495" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">シンプル運用体制</text>
+    
+    <!-- 内製開発チーム -->
+    <rect x="340" y="70" width="310" height="80" fill="#333" opacity="0.1" rx="5"/>
+    <text x="495" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">内製開発チーム（5人）</text>
+    
+    <circle cx="360" cy="110" r="15" fill="#FF6B35"/>
+    <text x="360" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">IT</text>
+    <text x="385" y="115" font-family="Arial, sans-serif" font-size="9" fill="#333">ITマネージャー</text>
+    
+    <circle cx="500" cy="110" r="12" fill="#0078D4"/>
+    <text x="500" y="114" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">AI</text>
+    <text x="520" y="115" font-family="Arial, sans-serif" font-size="9" fill="#333">AIエンジニア×2</text>
+    
+    <circle cx="360" cy="135" r="12" fill="#48BB78"/>
+    <text x="360" y="139" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">SYS</text>
+    <text x="385" y="140" font-family="Arial, sans-serif" font-size="9" fill="#333">システム管理者</text>
+    
+    <circle cx="500" cy="135" r="12" fill="#9AE6B4"/>
+    <text x="500" y="139" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">DA</text>
+    <text x="520" y="140" font-family="Arial, sans-serif" font-size="9" fill="#333">データアナリスト</text>
+    
+    <!-- 住民ITリテラシー -->
+    <rect x="340" y="160" width="310" height="80" fill="#48BB78" opacity="0.1" rx="5"/>
+    <text x="495" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#48BB78">住民ITリテラシー向上</text>
+    
+    <text x="350" y="190" font-family="Arial, sans-serif" font-size="9" fill="#2F855A">✓ Microsoft認定資格取得支援</text>
+    <text x="350" y="205" font-family="Arial, sans-serif" font-size="9" fill="#2F855A">✓ AI活用研修（月1回）</text>
+    <text x="350" y="220" font-family="Arial, sans-serif" font-size="9" fill="#2F855A">✓ 住民向けデジタル教室（週1回）</text>
+    <text x="350" y="235" font-family="Arial, sans-serif" font-size="9" fill="#2F855A">✓ 子供向けプログラミング教育</text>
+  </g>
+  
+  <!-- 段階的実装タイムライン -->
+  <g id="implementation-timeline">
+    <rect x="50" y="30" width="250" height="220" fill="rgba(255,255,255,0.95)" stroke="#666" stroke-width="2" rx="10"/>
+    <text x="175" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#666">実装タイムライン</text>
+    
+    <!-- Phase 1 -->
+    <rect x="70" y="70" width="210" height="45" fill="#FF6B35" opacity="0.2" rx="5"/>
+    <text x="80" y="85" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FF6B35">Phase 1（0-6ヶ月）</text>
+    <text x="80" y="98" font-family="Arial, sans-serif" font-size="8" fill="#666">M365 + Dynamics365統合</text>
+    <text x="80" y="110" font-family="Arial, sans-serif" font-size="8" fill="#666">月額55万円</text>
+    
+    <!-- Phase 2 -->
+    <rect x="70" y="125" width="210" height="45" fill="#0078D4" opacity="0.2" rx="5"/>
+    <text x="80" y="140" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0078D4">Phase 2（6-12ヶ月）</text>
+    <text x="80" y="153" font-family="Arial, sans-serif" font-size="8" fill="#666">IoT Central + GitHub追加</text>
+    <text x="80" y="165" font-family="Arial, sans-serif" font-size="8" fill="#666">月額75万円、収益化開始</text>
+    
+    <!-- Phase 3 -->
+    <rect x="70" y="180" width="210" height="45" fill="#48BB78" opacity="0.2" rx="5"/>
+    <text x="80" y="195" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#48BB78">Phase 3（12-18ヶ月）</text>
+    <text x="80" y="208" font-family="Arial, sans-serif" font-size="8" fill="#666">AI完成・黒字化達成</text>
+    <text x="80" y="220" font-family="Arial, sans-serif" font-size="8" fill="#666">純利益月225万円</text>
+  </g>
+  
+  <!-- 統合効果の説明 -->
+  <text x="700" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0078D4">統合による相乗効果</text>
+  <text x="700" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Azure基盤活用でSaaSコスト60%削減 | 内製AI開発で外部ライセンス不要 | シンプル構成で永続運用可能</text>
+</svg>
