@@ -16,7 +16,7 @@
 - **地理空間情報**: GIS基盤、3D都市モデル、座標系統一
 - **組織・職務情報**: 行政組織、企業、役職の階層管理
 
-[]
+[データ基盤](./azure_data_platform_design.md)
 
 ## 2. 認証・認可基盤層（Identity & Access Management）
 
