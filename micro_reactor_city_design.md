@@ -143,6 +143,11 @@
 [市都市を支えるSaaS](./doc/simple_integration_architecture.md)  
 
 ### 5.3 交通システム
+
+![ロゴ](./svg/smart_traffic_system.svg)
+
+[交通システム](./doc/smart_traffic_system.md)  
+
 ```
 ■ 域内交通
 - 自動運転シャトルバス: 電気バス、15分間隔運行
