@@ -160,6 +160,11 @@
 ## 6. 産業・経済システム
 
 ### 6.1 自給自足産業
+
+![ロゴ](./svg/food_production_factory_2040.svg)
+
+[自給自足生産](./doc/food_production_factory_2040.md)  
+
 ```
 ■ 食料生産
 - 米: 完全自給（年間500トン）
