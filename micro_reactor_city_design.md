@@ -199,6 +199,8 @@
 - **利益分配**: 住民への配当システム
 - **起業支援**: 新規事業立ち上げ資金提供
 
+![ロゴ](./svg/wellbeing_model_diagram.svg)
+
 ## 7. 社会システム・ガバナンス
 
 [市政を支えるトップ9人](./doc/nine_leaders_ai_profiles.md)  
