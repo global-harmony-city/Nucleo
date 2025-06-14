@@ -34,7 +34,7 @@
 - **動的権限管理**: 緊急時・特別業務での権限変更
 - **監査ログ**: アクセス履歴の完全記録
 
-[データ基盤](./azure_auth_platform_design.md)
+[認証・認可基盤](./azure_auth_platform_design.md)
 
 ## 3. 通信・ネットワーク基盤層（Communication Infrastructure）
 
