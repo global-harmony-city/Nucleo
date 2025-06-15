@@ -96,6 +96,11 @@
 - **住宅仕様**: 高断熱、地熱利用、スマートホーム
 
 ### 4.3 産業区域
+
+![ロゴ](./svg/automated_housing_svg.svg)
+
+[産業区域](./doc/residential_design.md)  
+
 ```
 ■ 農業エリア（200ha）
 - 水田: 100ha（年間500トン米生産）
