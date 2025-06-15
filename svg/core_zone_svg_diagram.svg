@@ -1,0 +1,332 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景・グリッド -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#E0E0E0" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="digitalGov" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="education" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#50C878;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="safety" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E55555;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="medical" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9A8B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF7F7F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="900" fill="url(#grid)"/>
+  
+  <!-- タイトル・基本情報 -->
+  <rect x="0" y="0" width="1200" height="80" fill="#2C3E50" opacity="0.9"/>
+  <text x="600" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">Well-Being Pioneer City コアゾーン基本設計（30ha）</text>
+  <text x="600" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#BDC3C7">2040年KPI達成のための公共サービス中枢 - 全住民15分アクセス圏</text>
+  <text x="600" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#95A5A6">投資額120億円 | 年間運営費12億円 | 年間収益15億円 | 純利益3億円</text>
+
+  <!-- 中央広場（シビックプラザ） -->
+  <circle cx="600" cy="450" r="80" fill="#27AE60" opacity="0.8" stroke="#1E8449" stroke-width="3"/>
+  <text x="600" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">中央広場</text>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">シビックプラザ</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">住民参加イベント</text>
+  
+  <!-- デジタル情報タワー -->
+  <rect x="590" y="420" width="20" height="40" fill="#3498DB"/>
+  <circle cx="600" cy="415" r="8" fill="#E74C3C"/>
+  <text x="600" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">情報タワー</text>
+
+  <!-- 1. デジタル市役所コンプレックス（北東・8ha） -->
+  <rect x="650" y="250" width="300" height="200" fill="url(#digitalGov)" rx="10" opacity="0.9"/>
+  <rect x="660" y="260" width="280" height="180" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- 市役所メインタワー -->
+  <rect x="700" y="280" width="80" height="120" fill="#2980B9" rx="5"/>
+  <rect x="710" y="290" width="60" height="100" fill="#3498DB" opacity="0.7"/>
+  
+  <!-- 階層表示 -->
+  <rect x="715" y="295" width="50" height="8" fill="white" opacity="0.9"/>
+  <text x="740" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#2C3E50">8F 展望・住民ラウンジ</text>
+  <rect x="715" y="305" width="50" height="8" fill="white" opacity="0.9"/>
+  <text x="740" y="311" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#2C3E50">7F 議会・住民参加</text>
+  <rect x="715" y="315" width="50" height="8" fill="white" opacity="0.9"/>
+  <text x="740" y="321" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#2C3E50">6F 市長・幹部</text>
+  <rect x="715" y="325" width="50" height="8" fill="white" opacity="0.9"/>
+  <text x="740" y="331" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#2C3E50">5F 職員ワークスペース</text>
+  <rect x="715" y="335" width="50" height="8" fill="#FFD700" opacity="0.9"/>
+  <text x="740" y="341" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#2C3E50">4F AI統合管制</text>
+  <rect x="715" y="345" width="50" height="8" fill="#E74C3C" opacity="0.9"/>
+  <text x="740" y="351" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">3F 住民サービス</text>
+  <rect x="715" y="355" width="50" height="8" fill="#E74C3C" opacity="0.9"/>
+  <text x="740" y="361" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">2F デジタル手続き</text>
+  <rect x="715" y="365" width="50" height="8" fill="#E74C3C" opacity="0.9"/>
+  <text x="740" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">1F エントランス</text>
+
+  <!-- 透明性シンボル -->
+  <rect x="680" y="300" width="15" height="80" fill="none" stroke="white" stroke-width="3"/>
+  <text x="672" y="295" font-family="Arial, sans-serif" font-size="8" fill="white">透明性</text>
+  
+  <!-- 住民プラザ -->
+  <rect x="800" y="300" width="80" height="60" fill="#85C1E9" rx="5"/>
+  <text x="840" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#2C3E50">住民プラザ</text>
+  <text x="840" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">24時間開放</text>
+  <text x="840" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#2C3E50">相談・交流</text>
+
+  <!-- データセンター（地下） -->
+  <rect x="720" y="380" width="40" height="15" fill="#34495E"/>
+  <text x="740" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">B1 データセンター</text>
+  <rect x="720" y="395" width="40" height="15" fill="#2C3E50"/>
+  <text x="740" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">B2 緊急シェルター</text>
+
+  <text x="800" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">1. デジタル市役所（8ha）</text>
+  <text x="800" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">• 窓口ゼロ・完全デジタル化</text>
+  <text x="800" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">• AI統合管制センター</text>
+
+  <!-- 2. 教育イノベーションキャンパス（北西・12ha） -->
+  <rect x="100" y="200" width="400" height="250" fill="url(#education)" rx="10" opacity="0.9"/>
+  <rect x="110" y="210" width="380" height="230" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- 小中一貫校 -->
+  <rect x="130" y="230" width="150" height="100" fill="#2ECC71" rx="5"/>
+  <text x="205" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">小中一貫校</text>
+  <text x="205" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">240人（小150・中90）</text>
+  
+  <!-- 特色教室 -->
+  <rect x="140" y="275" width="25" height="20" fill="#27AE60"/>
+  <text x="152" y="287" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">AI学習</text>
+  <rect x="170" y="275" width="25" height="20" fill="#27AE60"/>
+  <text x="182" y="287" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">VR</text>
+  <rect x="200" y="275" width="25" height="20" fill="#27AE60"/>
+  <text x="212" y="287" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">3D</text>
+  <rect x="230" y="275" width="25" height="20" fill="#27AE60"/>
+  <text x="242" y="287" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">音楽</text>
+
+  <!-- 生涯学習センター -->
+  <rect x="300" y="230" width="120" height="80" fill="#58D68D" rx="5"/>
+  <text x="360" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">生涯学習センター</text>
+  <rect x="310" y="260" width="35" height="20" fill="#4CAF50"/>
+  <text x="327" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">図書館</text>
+  <rect x="350" y="260" width="35" height="20" fill="#4CAF50"/>
+  <text x="367" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">研修室</text>
+  <rect x="390" y="260" width="25" height="20" fill="#4CAF50"/>
+  <text x="402" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">IT</text>
+
+  <!-- 国際交流センター -->
+  <rect x="130" y="350" width="100" height="60" fill="#76D7C4" rx="5"/>
+  <text x="180" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">国際交流</text>
+  <text x="180" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">多言語・文化</text>
+  <text x="180" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">ゲストハウス</text>
+
+  <!-- コミュニティ学習 -->
+  <rect x="250" y="350" width="120" height="60" fill="#52C6B5" rx="5"/>
+  <text x="310" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">多世代交流ホール</text>
+  <text x="310" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">シニア講師・親子学習</text>
+  <text x="310" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">アート・音楽スタジオ</text>
+
+  <text x="300" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">2. 教育イノベーションキャンパス（12ha）</text>
+  <text x="300" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">• AI個別最適化教育 • 創造性99%→100%達成 • 多言語習得80%</text>
+
+  <!-- 3. 統合安全センター（南東・4ha） -->
+  <rect x="650" y="550" width="200" height="150" fill="url(#safety)" rx="10" opacity="0.9"/>
+  <rect x="660" y="560" width="180" height="130" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- AI統合指令センター -->
+  <rect x="670" y="580" width="60" height="50" fill="#C0392B" rx="5"/>
+  <text x="700" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">AI指令センター</text>
+  <text x="700" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">24時間監視</text>
+  <text x="700" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">200台カメラ</text>
+
+  <!-- 警察施設 -->
+  <rect x="750" y="580" width="40" height="40" fill="#3F51B5" rx="3"/>
+  <text x="770" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">警察</text>
+  <text x="770" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">EV×2</text>
+  <text x="770" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">ドローン×5</text>
+
+  <!-- 消防・救急 -->
+  <rect x="800" y="580" width="40" height="40" fill="#D32F2F" rx="3"/>
+  <text x="820" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">消防</text>
+  <text x="820" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">EV消防車</text>
+  <text x="820" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">救急車</text>
+
+  <!-- 住民防災教育 -->
+  <rect x="670" y="640" width="160" height="30" fill="#FF5722" rx="3"/>
+  <text x="750" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">住民防災教育センター</text>
+  <text x="750" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">VR訓練・体験学習・応急手当認定</text>
+
+  <text x="750" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">3. 統合安全センター（4ha）</text>
+  <text x="750" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">• 犯罪0件・事故0件達成 • 3分以内緊急対応 • 住民協働防災</text>
+
+  <!-- 4. ウェルネス医療ハブ（南西・6ha） -->
+  <rect x="200" y="550" width="250" height="150" fill="url(#medical)" rx="10" opacity="0.9"/>
+  <rect x="210" y="560" width="230" height="130" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- 予防医療センター -->
+  <rect x="220" y="580" width="80" height="60" fill="#E74C3C" rx="5"/>
+  <text x="260" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">予防医療センター</text>
+  <text x="260" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">AI診断・24時間</text>
+  <text x="260" y="618" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">内科・小児・歯科</text>
+  <text x="260" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">オンライン診療</text>
+
+  <!-- ウェルネス施設 -->
+  <rect x="320" y="580" width="60" height="40" fill="#FF6B6B" rx="3"/>
+  <text x="350" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">フィットネス</text>
+  <text x="350" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">個人指導</text>
+  <text x="350" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">VR運動</text>
+
+  <rect x="390" y="580" width="40" height="40" fill="#FF7F7F" rx="3"/>
+  <text x="410" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">温浴</text>
+  <text x="410" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">排熱利用</text>
+  <text x="410" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="white">サウナ</text>
+
+  <!-- 介護・多世代交流 -->
+  <rect x="220" y="650" width="100" height="30" fill="#FF9A8B" rx="3"/>
+  <text x="270" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">デイサービス・多世代交流</text>
+  <text x="270" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">30人・認知症予防・託児併設</text>
+
+  <!-- 栄養センター -->
+  <rect x="340" y="650" width="80" height="30" fill="#FFA07A" rx="3"/>
+  <text x="380" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">栄養・食育センター</text>
+  <text x="380" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="white">管理栄養士・料理教室・健康カフェ</text>
+
+  <text x="325" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">4. ウェルネス医療ハブ（6ha）</text>
+  <text x="325" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2C3E50">• 健康寿命+5歳達成 • 疾病予防90% • 24時間健康サポート</text>
+
+  <!-- 歩行者デッキ・地下通路 -->
+  <path d="M 300 450 Q 450 400 600 450 Q 750 400 900 450" fill="none" stroke="#3498DB" stroke-width="4" stroke-dasharray="10,5"/>
+  <text x="600" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#3498DB" font-weight="bold">2階レベル歩行者デッキ</text>
+
+  <path d="M 300 470 Q 450 500 600 470 Q 750 500 900 470" fill="none" stroke="#95A5A6" stroke-width="4" stroke-dasharray="10,5"/>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#95A5A6" font-weight="bold">地下連絡通路（悪天候・緊急時）</text>
+
+  <!-- 自動運転シャトル -->
+  <circle cx="500" cy="450" r="15" fill="#F39C12"/>
+  <text x="500" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">BUS</text>
+  <circle cx="700" cy="450" r="15" fill="#F39C12"/>
+  <text x="700" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">BUS</text>
+  <text x="600" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#F39C12" font-weight="bold">自動運転シャトル（2分間隔）</text>
+
+  <!-- 統合インフラ表示 -->
+  <rect x="50" y="750" width="1100" height="120" fill="#34495E" opacity="0.8" rx="5"/>
+  <text x="600" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">統合インフラ・管理システム</text>
+  
+  <rect x="80" y="780" width="200" height="70" fill="#2C3E50" rx="3"/>
+  <text x="180" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#3498DB">エネルギー</text>
+  <text x="180" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">マイクロ炉500kW</text>
+  <text x="180" y="822" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">太陽光50kW</text>
+  <text x="180" y="834" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">蓄電池500kWh</text>
+  <text x="180" y="846" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">地域暖房1MW</text>
+
+  <rect x="300" y="780" width="200" height="70" fill="#2C3E50" rx="3"/>
+  <text x="400" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#E74C3C">AI統合制御</text>
+  <text x="400" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">需要予測・最適配分</text>
+  <text x="400" y="822" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">故障予測・予防保全</text>
+  <text x="400" y="834" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">緊急対応・自動切替</text>
+  <text x="400" y="846" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">住民サービス最適化</text>
+
+  <rect x="520" y="780" width="200" height="70" fill="#2C3E50" rx="3"/>
+  <text x="620" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#27AE60">通信・IoT</text>
+  <text x="620" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">5G・光ファイバー</text>
+  <text x="620" y="822" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">IoTセンサー1000台</text>
+  <text x="620" y="834" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">AI画像解析</text>
+  <text x="620" y="846" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">多言語・音声認識</text>
+
+  <rect x="740" y="780" width="200" height="70" fill="#2C3E50" rx="3"/>
+  <text x="840" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#9B59B6">データ・分析</text>
+  <text x="840" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">住民満足度リアルタイム</text>
+  <text x="840" y="822" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">政策効果測定</text>
+  <text x="840" y="834" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">予測分析・改善提案</text>
+  <text x="840" y="846" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">透明性100%公開</text>
+
+  <rect x="960" y="780" width="200" height="70" fill="#2C3E50" rx="3"/>
+  <text x="1060" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#F39C12">交通・移動</text>
+  <text x="1060" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">自動運転バス5台</text>
+  <text x="1060" y="822" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">電動自転車50台</text>
+  <text x="1060" y="834" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">バリアフリー100%</text>
+  <text x="1060" y="846" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">EV充電25箇所</text>
+
+  <!-- KPI達成指標（右下） -->
+  <rect x="950" y="100" width="240" height="140" fill="#1ABC9C" opacity="0.9" rx="5"/>
+  <text x="1070" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">2040年KPI達成目標</text>
+  
+  <text x="960" y="135" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 行政手続き処理時間：7日→1時間</text>
+  <text x="960" y="150" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 職員1人対応数：200人→500人/日</text>
+  <text x="960" y="165" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 住民満足度：95%以上</text>
+  <text x="960" y="180" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 犯罪・事故発生：年間0件</text>
+  <text x="960" y="195" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 健康寿命：全国平均+5歳</text>
+  <text x="960" y="210" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 教育創造性：全国平均+30%</text>
+  <text x="960" y="225" font-family="Arial, sans-serif" font-size="9" fill="white">✓ 緊急応答時間：平均3分以内</text>
+
+  <!-- 住民アクセス圏表示（左下） -->
+  <rect x="20" y="100" width="200" height="140" fill="#E67E22" opacity="0.9" rx="5"/>
+  <text x="120" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">15分アクセス圏</text>
+  
+  <circle cx="120" cy="170" r="40" fill="none" stroke="white" stroke-width="3"/>
+  <circle cx="120" cy="170" r="30" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+  <circle cx="120" cy="170" r="20" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+  <circle cx="120" cy="170" r="10" fill="none" stroke="white" stroke-width="2" stroke-dasharray="5,5"/>
+  <circle cx="120" cy="170" r="3" fill="white"/>
+  
+  <text x="120" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">中央</text>
+  <text x="135" y="155" font-family="Arial, sans-serif" font-size="7" fill="white">5分</text>
+  <text x="145" y="145" font-family="Arial, sans-serif" font-size="7" fill="white">10分</text>
+  <text x="155" y="135" font-family="Arial, sans-serif" font-size="7" fill="white">15分</text>
+  
+  <text x="120" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">全住民1000人が徒歩・自転車で</text>
+  <text x="120" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">15分以内にアクセス可能</text>
+
+  <!-- 職員配置（左上） -->
+  <rect x="20" y="300" width="200" height="120" fill="#8E44AD" opacity="0.9" rx="5"/>
+  <text x="120" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">職員配置（150人）</text>
+  
+  <text x="30" y="340" font-family="Arial, sans-serif" font-size="9" fill="white">市役所：30人（市長・部長・職員）</text>
+  <text x="30" y="355" font-family="Arial, sans-serif" font-size="9" fill="white">警察：10人（交番・パトロール）</text>
+  <text x="30" y="370" font-family="Arial, sans-serif" font-size="9" fill="white">消防：10人（消防・救急）</text>
+  <text x="30" y="385" font-family="Arial, sans-serif" font-size="9" fill="white">教育：40人（教師・職員）</text>
+  <text x="30" y="400" font-family="Arial, sans-serif" font-size="9" fill="white">医療：30人（医師・看護師）</text>
+  <text x="30" y="415" font-family="Arial, sans-serif" font-size="9" fill="white">運営・技術：30人（AI・保守）</text>
+
+  <!-- 投資効果（右上） -->
+  <rect x="950" y="300" width="240" height="120" fill="#C0392B" opacity="0.9" rx="5"/>
+  <text x="1070" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">投資効果・収益性</text>
+  
+  <text x="960" y="340" font-family="Arial, sans-serif" font-size="9" fill="white">初期投資：120億円（コアゾーンのみ）</text>
+  <text x="960" y="355" font-family="Arial, sans-serif" font-size="9" fill="white">年間運営費：12億円</text>
+  <text x="960" y="370" font-family="Arial, sans-serif" font-size="9" fill="white">年間収益：15億円</text>
+  <text x="960" y="385" font-family="Arial, sans-serif" font-size="9" fill="white">純利益：3億円（住民還元）</text>
+  <text x="960" y="400" font-family="Arial, sans-serif" font-size="9" fill="white">投資回収：8年、ROI：15%</text>
+  <text x="960" y="415" font-family="Arial, sans-serif" font-size="9" fill="white">住民税削減：年15万円/人</text>
+
+  <!-- 凡例 -->
+  <rect x="500" y="100" width="180" height="90" fill="#2C3E50" opacity="0.9" rx="5"/>
+  <text x="590" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">凡例</text>
+  
+  <rect x="510" y="130" width="15" height="8" fill="#4A90E2"/>
+  <text x="530" y="137" font-family="Arial, sans-serif" font-size="8" fill="white">デジタル市役所</text>
+  
+  <rect x="510" y="145" width="15" height="8" fill="#50C878"/>
+  <text x="530" y="152" font-family="Arial, sans-serif" font-size="8" fill="white">教育イノベーション</text>
+  
+  <rect x="510" y="160" width="15" height="8" fill="#FF6B6B"/>
+  <text x="530" y="167" font-family="Arial, sans-serif" font-size="8" fill="white">統合安全センター</text>
+  
+  <rect x="510" y="175" width="15" height="8" fill="#FF9A8B"/>
+  <text x="530" y="182" font-family="Arial, sans-serif" font-size="8" fill="white">ウェルネス医療</text>
+
+  <line x1="620" y1="135" x2="635" y2="135" stroke="#3498DB" stroke-width="3" stroke-dasharray="5,2"/>
+  <text x="640" y="139" font-family="Arial, sans-serif" font-size="8" fill="white">歩行者デッキ</text>
+  
+  <line x1="620" y1="150" x2="635" y2="150" stroke="#95A5A6" stroke-width="3" stroke-dasharray="5,2"/>
+  <text x="640" y="154" font-family="Arial, sans-serif" font-size="8" fill="white">地下通路</text>
+  
+  <circle cx="627" cy="165" r="6" fill="#F39C12"/>
+  <text x="640" y="169" font-family="Arial, sans-serif" font-size="8" fill="white">シャトルバス</text>
+  
+  <circle cx="627" cy="180" r="6" fill="#27AE60"/>
+  <text x="640" y="184" font-family="Arial, sans-serif" font-size="8" fill="white">中央広場</text>
+
+</svg>
