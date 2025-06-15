@@ -1,0 +1,299 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- グラデーション定義 -->
+  <defs>
+    <radialGradient id="reactorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0080FF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#004080;stop-opacity:0.6" />
+    </radialGradient>
+    
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#696969;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F2F2F;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+    
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#FFD700"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景（空と地面） -->
+  <rect width="1400" height="300" fill="#87CEEB"/>
+  <rect y="300" width="1400" height="700" fill="#90EE90" opacity="0.3"/>
+  
+  <!-- タイトル -->
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2F4F4F">マイクロ炉自給自足型モデル都市</text>
+  <text x="700" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">企業誘致エリア配置図 - 農業×製造×IT完全統合</text>
+  
+  <!-- メイン道路（十字型） -->
+  <g id="main-roads">
+    <!-- 横道路 -->
+    <rect x="0" y="480" width="1400" height="40" fill="url(#roadGrad)"/>
+    <rect x="0" y="485" width="1400" height="30" fill="#404040"/>
+    <!-- 中央線 -->
+    <rect x="0" y="495" width="1400" height="4" fill="#FFFF00" opacity="0.8"/>
+    <rect x="0" y="501" width="1400" height="4" fill="#FFFF00" opacity="0.8"/>
+    
+    <!-- 縦道路 -->
+    <rect x="680" y="300" width="40" height="700" fill="url(#roadGrad)"/>
+    <rect x="685" y="300" width="30" height="700" fill="#404040"/>
+    <!-- 中央線 -->
+    <rect x="695" y="300" width="4" height="700" fill="#FFFF00" opacity="0.8"/>
+    <rect x="701" y="300" width="4" height="700" fill="#FFFF00" opacity="0.8"/>
+  </g>
+  
+  <!-- 中央エネルギー区域（マイクロ炉） -->
+  <g id="central-energy" filter="url(#shadow)">
+    <circle cx="700" cy="500" r="50" fill="url(#reactorGlow)"/>
+    <circle cx="700" cy="500" r="35" fill="#00FFFF" opacity="0.4"/>
+    <text x="700" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">マイクロ炉</text>
+    <text x="700" y="508" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">500kW</text>
+    <text x="700" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2F4F4F">中央エネルギー区域</text>
+    
+    <!-- 管理施設 -->
+    <rect x="650" y="580" width="100" height="30" fill="#4169E1" rx="5"/>
+    <text x="700" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">管理センター</text>
+  </g>
+  
+  <!-- 住宅エリア（4つのブロック） -->
+  <g id="residential-areas">
+    <!-- 住宅エリア1（左上） -->
+    <rect x="150" y="330" width="200" height="120" fill="#DEB887" opacity="0.7" rx="10"/>
+    <text x="250" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B4513">住宅エリアA</text>
+    <!-- 戸建て住宅 -->
+    <g id="houses-a">
+      <rect x="160" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="160,360 167.5,350 175,360" fill="#8B4513"/>
+      <rect x="180" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="180,360 187.5,350 195,360" fill="#8B4513"/>
+      <rect x="200" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="200,360 207.5,350 215,360" fill="#8B4513"/>
+      <rect x="220" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="220,360 227.5,350 235,360" fill="#8B4513"/>
+      <rect x="160" y="380" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="160,380 167.5,370 175,380" fill="#8B4513"/>
+      <rect x="180" y="380" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="180,380 187.5,370 195,380" fill="#8B4513"/>
+    </g>
+    <text x="250" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8B4513">85世帯・250人</text>
+    
+    <!-- 住宅エリア2（右上） -->
+    <rect x="1050" y="330" width="200" height="120" fill="#DEB887" opacity="0.7" rx="10"/>
+    <text x="1150" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B4513">住宅エリアB</text>
+    <!-- 戸建て住宅 -->
+    <g id="houses-b">
+      <rect x="1060" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1060,360 1067.5,350 1075,360" fill="#8B4513"/>
+      <rect x="1080" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1080,360 1087.5,350 1095,360" fill="#8B4513"/>
+      <rect x="1100" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1100,360 1107.5,350 1115,360" fill="#8B4513"/>
+      <rect x="1120" y="360" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1120,360 1127.5,350 1135,360" fill="#8B4513"/>
+      <rect x="1060" y="380" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1060,380 1067.5,370 1075,380" fill="#8B4513"/>
+      <rect x="1080" y="380" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1080,380 1087.5,370 1095,380" fill="#8B4513"/>
+    </g>
+    <text x="1150" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8B4513">85世帯・250人</text>
+    
+    <!-- 住宅エリア3（左下） -->
+    <rect x="150" y="550" width="200" height="120" fill="#DEB887" opacity="0.7" rx="10"/>
+    <text x="250" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B4513">住宅エリアC</text>
+    <!-- 戸建て住宅 -->
+    <g id="houses-c">
+      <rect x="160" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="160,580 167.5,570 175,580" fill="#8B4513"/>
+      <rect x="180" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="180,580 187.5,570 195,580" fill="#8B4513"/>
+      <rect x="200" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="200,580 207.5,570 215,580" fill="#8B4513"/>
+      <rect x="220" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="220,580 227.5,570 235,580" fill="#8B4513"/>
+      <rect x="160" y="600" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="160,600 167.5,590 175,600" fill="#8B4513"/>
+      <rect x="180" y="600" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="180,600 187.5,590 195,600" fill="#8B4513"/>
+    </g>
+    <text x="250" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8B4513">85世帯・250人</text>
+    
+    <!-- 住宅エリア4（右下） -->
+    <rect x="1050" y="550" width="200" height="120" fill="#DEB887" opacity="0.7" rx="10"/>
+    <text x="1150" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B4513">住宅エリアD</text>
+    <!-- 戸建て住宅 -->
+    <g id="houses-d">
+      <rect x="1060" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1060,580 1067.5,570 1075,580" fill="#8B4513"/>
+      <rect x="1080" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1080,580 1087.5,570 1095,580" fill="#8B4513"/>
+      <rect x="1100" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1100,580 1107.5,570 1115,580" fill="#8B4513"/>
+      <rect x="1120" y="580" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1120,580 1127.5,570 1135,580" fill="#8B4513"/>
+      <rect x="1060" y="600" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1060,600 1067.5,590 1075,600" fill="#8B4513"/>
+      <rect x="1080" y="600" width="15" height="12" fill="#CD853F" rx="2"/>
+      <polygon points="1080,600 1087.5,590 1095,600" fill="#8B4513"/>
+    </g>
+    <text x="1150" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8B4513">85世帯・250人</text>
+  </g>
+  
+  <!-- 農業エリア（上部） -->
+  <g id="agriculture-zone" filter="url(#shadow)">
+    <rect x="400" y="80" width="600" height="180" fill="#32CD32" opacity="0.8" rx="15"/>
+    <text x="700" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">農業エリア（200ha）</text>
+    
+    <!-- 水田 -->
+    <rect x="420" y="120" width="120" height="60" fill="#228B22" opacity="0.9"/>
+    <rect x="420" y="120" width="120" height="60" fill="#4169E1" opacity="0.3"/>
+    <text x="480" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF">水田</text>
+    <text x="480" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">100ha</text>
+    
+    <!-- 温室 -->
+    <rect x="560" y="120" width="100" height="60" fill="#98FB98" stroke="#2F4F4F" stroke-width="2"/>
+    <polygon points="560,120 610,105 660,120" fill="rgba(255,255,255,0.6)"/>
+    <text x="610" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2F4F4F">温室施設</text>
+    <text x="610" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">30ha</text>
+    
+    <!-- 養鶏場 -->
+    <rect x="680" y="120" width="100" height="60" fill="#DEB887"/>
+    <circle cx="700" cy="140" r="3" fill="white"/>
+    <circle cx="710" cy="145" r="3" fill="white"/>
+    <circle cx="720" cy="140" r="3" fill="white"/>
+    <circle cx="730" cy="145" r="3" fill="white"/>
+    <circle cx="740" cy="140" r="3" fill="white"/>
+    <text x="730" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2F4F4F">養鶏場</text>
+    <text x="730" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">10万羽</text>
+    
+    <!-- 畑作地 -->
+    <rect x="800" y="120" width="120" height="60" fill="#8FBC8F"/>
+    <text x="860" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2F4F4F">畑作地</text>
+    <text x="860" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2F4F4F">50ha</text>
+    
+    <!-- 誘致企業情報 -->
+    <rect x="420" y="190" width="500" height="50" fill="rgba(255,255,255,0.9)" rx="5"/>
+    <text x="670" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#228B22">誘致ターゲット企業</text>
+    <text x="670" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">豊田通商・NTT東日本・クボタ・カゴメ・伊藤忠商事</text>
+  </g>
+  
+  <!-- 製造・加工エリア（左側） -->
+  <g id="manufacturing-zone" filter="url(#shadow)">
+    <rect x="50" y="720" width="300" height="180" fill="#FF6347" opacity="0.8" rx="15"/>
+    <text x="200" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">製造・加工エリア（50ha）</text>
+    
+    <!-- 食品加工工場 -->
+    <rect x="70" y="760" width="80" height="50" fill="#DC143C"/>
+    <rect x="75" y="765" width="70" height="20" fill="#FF6347"/>
+    <rect x="80" y="770" width="15" height="10" fill="#FFFFFF"/>
+    <rect x="100" y="770" width="15" height="10" fill="#FFFFFF"/>
+    <rect x="120" y="770" width="15" height="10" fill="#FFFFFF"/>
+    <text x="110" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">食品加工工場</text>
+    
+    <!-- 3Dプリンティング工場 -->
+    <rect x="170" y="760" width="80" height="50" fill="#4682B4"/>
+    <rect x="175" y="765" width="70" height="20" fill="#87CEEB"/>
+    <circle cx="190" cy="785" r="8" fill="#00FFFF"/>
+    <circle cx="210" cy="785" r="8" fill="#00FFFF"/>
+    <circle cx="230" cy="785" r="8" fill="#00FFFF"/>
+    <text x="210" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">3Dプリンタ工場</text>
+    
+    <!-- リサイクル施設 -->
+    <rect x="270" y="760" width="60" height="50" fill="#32CD32"/>
+    <text x="300" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">リサイクル</text>
+    
+    <!-- 誘致企業情報 -->
+    <rect x="70" y="840" width="260" height="40" fill="rgba(255,255,255,0.9)" rx="5"/>
+    <text x="200" y="855" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#DC143C">誘致ターゲット企業</text>
+    <text x="200" y="870" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">明治HD・日清食品・東レ・リコー</text>
+  </g>
+  
+  <!-- IT・研究エリア（右側） -->
+  <g id="it-zone" filter="url(#shadow)">
+    <rect x="1050" y="720" width="300" height="180" fill="#4682B4" opacity="0.8" rx="15"/>
+    <text x="1200" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">IT・研究エリア（30ha）</text>
+    
+    <!-- データセンター -->
+    <rect x="1070" y="760" width="60" height="50" fill="#2F4F4F"/>
+    <rect x="1075" y="765" width="50" height="20" fill="#4169E1"/>
+    <circle cx="1085" cy="785" r="3" fill="#00FFFF"/>
+    <circle cx="1095" cy="785" r="3" fill="#00FFFF"/>
+    <circle cx="1105" cy="785" r="3" fill="#00FFFF"/>
+    <circle cx="1115" cy="785" r="3" fill="#00FFFF"/>
+    <text x="1100" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">データセンター</text>
+    
+    <!-- 研究施設 -->
+    <rect x="1150" y="760" width="60" height="50" fill="#9370DB"/>
+    <rect x="1155" y="765" width="50" height="20" fill="#DDA0DD"/>
+    <text x="1180" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">研究開発施設</text>
+    
+    <!-- オフィス -->
+    <rect x="1230" y="760" width="60" height="50" fill="#20B2AA"/>
+    <rect x="1235" y="765" width="50" height="20" fill="#48D1CC"/>
+    <text x="1260" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">サテライト</text>
+    
+    <!-- 誘致企業情報 -->
+    <rect x="1070" y="840" width="260" height="40" fill="rgba(255,255,255,0.9)" rx="5"/>
+    <text x="1200" y="855" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4682B4">誘致ターゲット企業</text>
+    <text x="1200" y="870" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">NEC・富士通・ソフトバンク・三菱重工</text>
+  </g>
+  
+  <!-- 公共・商業エリア（中央下） -->
+  <g id="public-commercial" filter="url(#shadow)">
+    <rect x="600" y="720" width="200" height="100" fill="#FFE4B5" opacity="0.8" rx="10"/>
+    <text x="700" y="740" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8B4513">公共・商業エリア</text>
+    
+    <!-- 市役所 -->
+    <rect x="620" y="750" width="40" height="30" fill="#CD853F"/>
+    <text x="640" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">市役所</text>
+    
+    <!-- 学校 -->
+    <rect x="670" y="750" width="40" height="30" fill="#DEB887"/>
+    <text x="690" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">学校</text>
+    
+    <!-- 病院 -->
+    <rect x="720" y="750" width="40" height="30" fill="#F0E68C"/>
+    <text x="740" y="795" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#8B4513">診療所</text>
+  </g>
+  
+  <!-- エネルギー供給線（マイクロ炉から各エリアへ） -->
+  <g id="energy-supply" opacity="0.7">
+    <line x1="700" y1="500" x2="700" y2="170" stroke="#FFD700" stroke-width="6" marker-end="url(#arrowhead)"/>
+    <line x1="700" y1="500" x2="200" y2="800" stroke="#FFD700" stroke-width="6" marker-end="url(#arrowhead)"/>
+    <line x1="700" y1="500" x2="1200" y2="800" stroke="#FFD700" stroke-width="6" marker-end="url(#arrowhead)"/>
+    
+    <text x="750" y="330" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FF8C00">電力3円/kWh</text>
+    <text x="450" y="650" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FF8C00">電力3円/kWh</text>
+    <text x="950" y="650" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#FF8C00">電力3円/kWh</text>
+  </g>
+  
+  <!-- 統計情報パネル -->
+  <g id="stats-panel">
+    <rect x="50" y="80" width="200" height="120" fill="rgba(255,255,255,0.95)" stroke="#2F4F4F" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="150" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">都市基本データ</text>
+    <text x="150" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">📍 総面積：500ha</text>
+    <text x="150" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">👥 人口：1,000人</text>
+    <text x="150" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">🏠 世帯数：340世帯</text>
+    <text x="150" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">💼 雇用：850人</text>
+    <text x="150" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">💰 投資目標：800億円</text>
+  </g>
+  
+  <!-- 投資メリットパネル -->
+  <g id="merit-panel">
+    <rect x="1150" y="80" width="200" height="140" fill="rgba(255,255,255,0.95)" stroke="#2F4F4F" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="1250" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2F4F4F">企業投資メリット</text>
+    <text x="1250" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">⚡ 電力コスト80%削減</text>
+    <text x="1250" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">🏭 25年間安定供給保証</text>
+    <text x="1250" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">🌱 CO2排出ゼロ認証</text>
+    <text x="1250" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">🚀 実証実験環境提供</text>
+    <text x="1250" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">🤝 異業種連携機会</text>
+    <text x="1250" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">🌍 海外展開支援</text>
+  </g>
+  
+  <!-- フッター -->
+  <text x="700" y="965" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2F4F4F">2025年着工開始・2028年完全稼働予定</text>
+  <text x="700" y="985" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">マイクロ炉×3つの柱で実現する世界初の完全自給自足型産業都市</text>
+</svg>
