@@ -97,9 +97,9 @@
 
 ### 4.3 産業区域
 
-![ロゴ](./svg/automated_housing_svg.svg)
+![ロゴ](./svg/industrial_ecosystem_diagram.svg)
 
-[産業区域](./doc/residential_design.md)  
+[産業区域](./doc/nuclear_city_investment_strategy.md)  
 
 ```
 ■ 農業エリア（200ha）
