@@ -123,6 +123,12 @@
 ```
 
 ### 4.4 公共・商業区域（20ha）
+
+![ロゴ](./svg/core_zone_svg_diagram.svg)
+
+[都市を支える公共施設](./doc/core_zone_master_design.md)  
+[都市を支える公共KPI](./doc/public_facilities_kpi_manifesto_2040.md)  
+
 - **行政機関**: 市役所、警察、消防
 - **教育施設**: 小中学校、図書館、研修センター
 - **医療・福祉**: 診療所、デイサービス、薬局
