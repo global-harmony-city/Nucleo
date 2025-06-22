@@ -1,0 +1,183 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景とタイトル -->
+  <defs>
+    <linearGradient id="childGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="adultGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C5BCD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="seniorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#50C878;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1400" height="900" fill="#F8F9FA"/>
+  
+  <!-- タイトル -->
+  <rect x="0" y="0" width="1400" height="70" fill="#2C3E50"/>
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white">Well-Being Pioneer City 人口構造</text>
+  <text x="700" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#BDC3C7">目標人口1,000人の理想的なバランス構成</text>
+
+  <!-- 左側：年齢構成円グラフ -->
+  <text x="300" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2C3E50">年齢構成</text>
+  
+  <!-- 円グラフ本体 -->
+  <g transform="translate(300,280)">
+    <!-- 0-14歳: 15% (54度) -->
+    <path d="M 0,-100 A 100,100 0 0,1 95.1,-30.9 L 0,0 Z" fill="url(#childGradient)" stroke="white" stroke-width="3"/>
+    
+    <!-- 15-64歳: 70% (252度) -->
+    <path d="M 95.1,-30.9 A 100,100 0 1,1 -30.9,-95.1 L 0,0 Z" fill="url(#adultGradient)" stroke="white" stroke-width="3"/>
+    
+    <!-- 65歳以上: 15% (54度) -->
+    <path d="M -30.9,-95.1 A 100,100 0 0,1 0,-100 L 0,0 Z" fill="url(#seniorGradient)" stroke="white" stroke-width="3"/>
+    
+    <!-- パーセンテージラベル -->
+    <text x="60" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">15%</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">70%</text>
+    <text x="-60" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">15%</text>
+  </g>
+
+  <!-- 年齢構成凡例 -->
+  <rect x="80" y="420" width="440" height="180" fill="white" stroke="#E0E0E0" stroke-width="2" rx="10"/>
+  
+  <!-- 0-14歳 -->
+  <rect x="100" y="440" width="25" height="25" fill="url(#childGradient)" rx="5"/>
+  <text x="135" y="455" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">0-14歳：子供・教育世代</text>
+  <text x="135" y="475" font-family="Arial, sans-serif" font-size="15" fill="#7F8C8D">150人（15%）</text>
+  <text x="135" y="495" font-family="Arial, sans-serif" font-size="13" fill="#7F8C8D">• AI個別最適化教育 • 創造性・国際性重視</text>
+
+  <!-- 15-64歳 -->
+  <rect x="100" y="510" width="25" height="25" fill="url(#adultGradient)" rx="5"/>
+  <text x="135" y="525" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">15-64歳：労働世代</text>
+  <text x="135" y="545" font-family="Arial, sans-serif" font-size="15" fill="#7F8C8D">700人（70%）</text>
+  <text x="135" y="565" font-family="Arial, sans-serif" font-size="13" fill="#7F8C8D">• 週4日・1日6時間労働 • 高度技能・高収入</text>
+
+  <!-- 65歳以上 -->
+  <rect x="100" y="580" width="25" height="25" fill="url(#seniorGradient)" rx="5"/>
+  <text x="135" y="595" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">65歳以上：指導者世代</text>
+  <text x="135" y="615" font-family="Arial, sans-serif" font-size="15" fill="#7F8C8D">150人（15%）</text>
+  <text x="135" y="635" font-family="Arial, sans-serif" font-size="13" fill="#7F8C8D">• シニア講師制度 • 健康寿命+5歳</text>
+
+  <!-- 中央：職業構成棒グラフ -->
+  <text x="850" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2C3E50">職業構成</text>
+  
+  <!-- 基準線 -->
+  <line x1="650" y1="500" x2="1050" y2="500" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- 農業従事者: 25% -->
+  <rect x="670" y="375" width="50" height="125" fill="#27AE60" rx="5"/>
+  <text x="695" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">25%</text>
+  <text x="695" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">250人</text>
+  <text x="695" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">農業</text>
+  <text x="695" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">IoT・有機</text>
+
+  <!-- 製造・加工業: 20% -->
+  <rect x="740" y="400" width="50" height="100" fill="#E67E22" rx="5"/>
+  <text x="765" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">20%</text>
+  <text x="765" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">200人</text>
+  <text x="765" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">製造</text>
+  <text x="765" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">3D・食品</text>
+
+  <!-- IT・AI関連: 15% -->
+  <rect x="810" y="425" width="50" height="75" fill="#9B59B6" rx="5"/>
+  <text x="835" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">15%</text>
+  <text x="835" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">150人</text>
+  <text x="835" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">IT・AI</text>
+  <text x="835" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">開発・管理</text>
+
+  <!-- 公共サービス: 15% -->
+  <rect x="880" y="425" width="50" height="75" fill="#3498DB" rx="5"/>
+  <text x="905" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">15%</text>
+  <text x="905" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">150人</text>
+  <text x="905" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">公共</text>
+  <text x="905" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">行政・安全</text>
+
+  <!-- 商業・サービス: 10% -->
+  <rect x="950" y="450" width="50" height="50" fill="#F39C12" rx="5"/>
+  <text x="975" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">10%</text>
+  <text x="975" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">100人</text>
+  <text x="975" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">商業</text>
+  <text x="975" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">店舗・観光</text>
+
+  <!-- 教育・医療・福祉: 10% -->
+  <rect x="1020" y="450" width="50" height="50" fill="#E74C3C" rx="5"/>
+  <text x="1045" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">10%</text>
+  <text x="1045" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">100人</text>
+  <text x="1045" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2C3E50">教育医療</text>
+  <text x="1045" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">教師・医師</text>
+
+  <!-- 軸ラベル -->
+  <text x="630" y="505" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D">0%</text>
+  <text x="630" y="455" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D">15%</text>
+  <text x="630" y="405" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D">20%</text>
+  <text x="630" y="380" text-anchor="end" font-family="Arial, sans-serif" font-size="14" fill="#7F8C8D">25%</text>
+
+  <!-- 右側：特徴・メリット -->
+  <rect x="1080" y="150" width="280" height="200" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="2" rx="10"/>
+  <text x="1220" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">理想的構造の特徴</text>
+  
+  <text x="1100" y="205" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">✓ <tspan font-weight="bold">バランス重視</tspan></text>
+  <text x="1105" y="225" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">労働70%で経済安定</text>
+  
+  <text x="1100" y="250" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">✓ <tspan font-weight="bold">高付加価値</tspan></text>
+  <text x="1105" y="270" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">IT・製造で高収入</text>
+  
+  <text x="1100" y="295" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">✓ <tspan font-weight="bold">完全自給</tspan></text>
+  <text x="1105" y="315" font-family="Arial, sans-serif" font-size="12" fill="#7F8C8D">食料・エネルギー</text>
+  
+  <text x="1100" y="340" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">✓ <tspan font-weight="bold">充実サービス</tspan></text>
+
+  <!-- 下部：人口ピラミッド -->
+  <text x="350" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">理想的人口ピラミッド</text>
+  
+  <!-- 男性（左側） -->
+  <rect x="200" y="680" width="140" height="20" fill="#4A90E2" rx="3"/>
+  <text x="270" y="695" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">350人 (15-64歳)</text>
+  
+  <rect x="220" y="710" width="120" height="18" fill="#FFD700" rx="3"/>
+  <text x="280" y="723" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">75人 (0-14歳)</text>
+  
+  <rect x="230" y="735" width="110" height="18" fill="#50C878" rx="3"/>
+  <text x="285" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">75人 (65歳以上)</text>
+
+  <!-- 女性（右側） -->
+  <rect x="360" y="680" width="140" height="20" fill="#E91E63" rx="3"/>
+  <text x="430" y="695" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">350人 (15-64歳)</text>
+  
+  <rect x="360" y="710" width="120" height="18" fill="#FFA500" rx="3"/>
+  <text x="420" y="723" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2C3E50">75人 (0-14歳)</text>
+  
+  <rect x="360" y="735" width="110" height="18" fill="#228B22" rx="3"/>
+  <text x="415" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">75人 (65歳以上)</text>
+
+  <text x="270" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#3498DB">男性 500人</text>
+  <text x="430" y="775" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E91E63">女性 500人</text>
+
+  <!-- 日本全国との比較 -->
+  <rect x="600" y="650" width="320" height="150" fill="#FADBD8" stroke="#E74C3C" stroke-width="2" rx="10"/>
+  <text x="760" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#C0392B">vs 日本全国平均との比較</text>
+  
+  <text x="620" y="705" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50"><tspan fill="#C0392B">⚠</tspan> 高齢化率：28% → <tspan font-weight="bold">15%</tspan></text>
+  <text x="620" y="725" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50"><tspan fill="#27AE60">✓</tspan> 労働世代：59% → <tspan font-weight="bold">70%</tspan></text>
+  <text x="620" y="745" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50"><tspan fill="#27AE60">✓</tspan> 出生率：1.3 → <tspan font-weight="bold">2.1予定</tspan></text>
+  <text x="620" y="765" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50"><tspan fill="#27AE60">✓</tspan> 1次産業：4% → <tspan font-weight="bold">25%</tspan></text>
+  <text x="620" y="785" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50"><tspan fill="#27AE60">✓</tspan> 健康寿命：<tspan font-weight="bold">+5歳延伸</tspan></text>
+
+  <!-- 右下：まとめ -->
+  <rect x="1080" y="650" width="280" height="200" fill="#D5EFDB" stroke="#27AE60" stroke-width="2" rx="10"/>
+  <text x="1220" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#27AE60">Well-Being実現</text>
+  
+  <text x="1100" y="705" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">🏠 <tspan font-weight="bold">住居費半減</tspan></text>
+  <text x="1100" y="725" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">💰 <tspan font-weight="bold">年収1.5倍</tspan></text>
+  <text x="1100" y="745" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">⏰ <tspan font-weight="bold">労働時間短縮</tspan></text>
+  <text x="1100" y="765" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">🌱 <tspan font-weight="bold">持続可能性</tspan></text>
+  <text x="1100" y="785" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">🤝 <tspan font-weight="bold">コミュニティ</tspan></text>
+  <text x="1100" y="805" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">🏥 <tspan font-weight="bold">健康長寿</tspan></text>
+  <text x="1100" y="825" font-family="Arial, sans-serif" font-size="14" fill="#2C3E50">🎓 <tspan font-weight="bold">最高教育</tspan></text>
+
+</svg>
