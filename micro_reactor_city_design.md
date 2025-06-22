@@ -31,7 +31,7 @@
 
 ![ロゴ](./svg/improved_population_chart.svg)  
 
-[PBLカードゲーム概要](./game/PBL_cardgame.md)
+[PBLカードゲーム概要](./game/PBL_cardgame.md)  
 [産業構造・カードゲーム](./doc/city_industry_human_resources.md)  
 
 ```
