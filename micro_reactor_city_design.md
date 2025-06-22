@@ -29,8 +29,7 @@
 
 ### 2.2 人口構成
 
-![ロゴ](./svg/population_structure_diagram.svg)
-![ロゴ](./svg/population_structure_diagram.svg)
+![ロゴ](./svg/improved_population_chart.svg)
 
 ```
 ■ 年齢構成（目標）
