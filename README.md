@@ -30,8 +30,4 @@
 ![End](./画像/end_picture.webp)  
 ![MAP](./svg/wellbeing_tower_city.svg)  
 
-[今後の街を発展させるシナリオ](./micro_reactor_city_design.md)  
-[街を発展させるイメージゲーム](./game.md)  
-[街の中の企業を作るカードゲーム](./game/PBL_cardgame.md)
-
-
+[⭐️街を作り上げるシナリオ](./micro_reactor_city_design.md)  
