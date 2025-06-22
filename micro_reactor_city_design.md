@@ -30,7 +30,9 @@
 ### 2.2 人口構成
 
 ![ロゴ](./svg/improved_population_chart.svg)  
-[産業人口構造](./doc/city_industry_human_resources.md)  
+
+[PBLカードゲーム概要](./game/PBL_cardgame.md)
+[産業構造・カードゲーム](./doc/city_industry_human_resources.md)  
 
 ```
 ■ 年齢構成（目標）
