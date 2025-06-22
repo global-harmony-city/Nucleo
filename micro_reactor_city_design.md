@@ -29,7 +29,8 @@
 
 ### 2.2 人口構成
 
-![ロゴ](./svg/improved_population_chart.svg)
+![ロゴ](./svg/improved_population_chart.svg)  
+[産業人口構造](./doc/city_industroy_human_resources.md)  
 
 ```
 ■ 年齢構成（目標）
